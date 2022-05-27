@@ -1,0 +1,94 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Workspaces\\Visual Studio\\Estreya Blish HUD Trading Post Watcher\\Estreya.BlishHUD.TradingPostWatcher\\Estreya.BlishHUD.TradingPostWatcher.csproj": {}
+  },
+  "projects": {
+    "C:\\Workspaces\\Visual Studio\\Estreya Blish HUD Trading Post Watcher\\Estreya.BlishHUD.TradingPostWatcher\\Estreya.BlishHUD.TradingPostWatcher.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Workspaces\\Visual Studio\\Estreya Blish HUD Trading Post Watcher\\Estreya.BlishHUD.TradingPostWatcher\\Estreya.BlishHUD.TradingPostWatcher.csproj",
+        "projectName": "Estreya.BlishHUD.TradingPostWatcher",
+        "projectPath": "C:\\Workspaces\\Visual Studio\\Estreya Blish HUD Trading Post Watcher\\Estreya.BlishHUD.TradingPostWatcher\\Estreya.BlishHUD.TradingPostWatcher.csproj",
+        "packagesPath": "C:\\Users\\domin\\.nuget\\packages\\",
+        "outputPath": "C:\\Workspaces\\Visual Studio\\Estreya Blish HUD Trading Post Watcher\\Estreya.BlishHUD.TradingPostWatcher\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\domin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "targetAlias": "net472",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "targetAlias": "net472",
+          "dependencies": {
+            "AsyncClipboardService": {
+              "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "target": "Package",
+              "version": "[1.7.1, )"
+            },
+            "BlishHUD": {
+              "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "target": "Package",
+              "version": "[0.11.6, )"
+            },
+            "Gw2Sharp": {
+              "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "target": "Package",
+              "version": "[1.7.0, )"
+            },
+            "Humanizer.Core.de": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.6.2, )"
+            },
+            "Humanizer.Core.es": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.6.2, )"
+            },
+            "Humanizer.Core.fr": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.6.2, )"
+            },
+            "MonoGame.Extended": {
+              "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "target": "Package",
+              "version": "[3.8.0, )"
+            },
+            "MonoGame.Framework.WindowsDX": {
+              "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "target": "Package",
+              "version": "[3.8.0.1641, )"
+            },
+            "SemanticVersioning": {
+              "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "target": "Package",
+              "version": "[1.2.2, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,627 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\domin\.nuget\packages\</NuGetPackageFolders>
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.1.0</NuGetToolVersion>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <SourceRoot Include="C:\Users\domin\.nuget\packages\" />
+  </ItemGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Content Include="$(NuGetPackageRoot)monogame.extended\3.8.0\contentFiles\any\netstandard2.0\CppNet.dll" Condition="Exists('$(NuGetPackageRoot)monogame.extended\3.8.0\contentFiles\any\netstandard2.0\CppNet.dll')">
+      <NuGetPackageId>MonoGame.Extended</NuGetPackageId>
+      <NuGetPackageVersion>3.8.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>CppNet.dll</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)monogame.extended\3.8.0\contentFiles\any\netstandard2.0\SharpDX.D3DCompiler.dll" Condition="Exists('$(NuGetPackageRoot)monogame.extended\3.8.0\contentFiles\any\netstandard2.0\SharpDX.D3DCompiler.dll')">
+      <NuGetPackageId>MonoGame.Extended</NuGetPackageId>
+      <NuGetPackageVersion>3.8.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>SharpDX.D3DCompiler.dll</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)monogame.extended\3.8.0\contentFiles\any\netstandard2.0\SharpDX.D3DCompiler.xml" Condition="Exists('$(NuGetPackageRoot)monogame.extended\3.8.0\contentFiles\any\netstandard2.0\SharpDX.D3DCompiler.xml')">
+      <NuGetPackageId>MonoGame.Extended</NuGetPackageId>
+      <NuGetPackageVersion>3.8.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>SharpDX.D3DCompiler.xml</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)monogame.extended\3.8.0\contentFiles\any\netstandard2.0\SharpDX.dll" Condition="Exists('$(NuGetPackageRoot)monogame.extended\3.8.0\contentFiles\any\netstandard2.0\SharpDX.dll')">
+      <NuGetPackageId>MonoGame.Extended</NuGetPackageId>
+      <NuGetPackageVersion>3.8.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>SharpDX.dll</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)monogame.extended\3.8.0\contentFiles\any\netstandard2.0\SharpDX.xml" Condition="Exists('$(NuGetPackageRoot)monogame.extended\3.8.0\contentFiles\any\netstandard2.0\SharpDX.xml')">
+      <NuGetPackageId>MonoGame.Extended</NuGetPackageId>
+      <NuGetPackageVersion>3.8.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>SharpDX.xml</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)monogame.extended\3.8.0\contentFiles\any\netstandard2.0\libmojoshader_64.dll" Condition="Exists('$(NuGetPackageRoot)monogame.extended\3.8.0\contentFiles\any\netstandard2.0\libmojoshader_64.dll')">
+      <NuGetPackageId>MonoGame.Extended</NuGetPackageId>
+      <NuGetPackageVersion>3.8.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>libmojoshader_64.dll</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)monogame.extended\3.8.0\contentFiles\any\netstandard2.0\mgfxc.deps.json" Condition="Exists('$(NuGetPackageRoot)monogame.extended\3.8.0\contentFiles\any\netstandard2.0\mgfxc.deps.json')">
+      <NuGetPackageId>MonoGame.Extended</NuGetPackageId>
+      <NuGetPackageVersion>3.8.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>mgfxc.deps.json</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)monogame.extended\3.8.0\contentFiles\any\netstandard2.0\mgfxc.dll" Condition="Exists('$(NuGetPackageRoot)monogame.extended\3.8.0\contentFiles\any\netstandard2.0\mgfxc.dll')">
+      <NuGetPackageId>MonoGame.Extended</NuGetPackageId>
+      <NuGetPackageVersion>3.8.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>mgfxc.dll</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)monogame.extended\3.8.0\contentFiles\any\netstandard2.0\mgfxc.exe" Condition="Exists('$(NuGetPackageRoot)monogame.extended\3.8.0\contentFiles\any\netstandard2.0\mgfxc.exe')">
+      <NuGetPackageId>MonoGame.Extended</NuGetPackageId>
+      <NuGetPackageVersion>3.8.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>mgfxc.exe</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)monogame.extended\3.8.0\contentFiles\any\netstandard2.0\mgfxc.pdb" Condition="Exists('$(NuGetPackageRoot)monogame.extended\3.8.0\contentFiles\any\netstandard2.0\mgfxc.pdb')">
+      <NuGetPackageId>MonoGame.Extended</NuGetPackageId>
+      <NuGetPackageVersion>3.8.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>mgfxc.pdb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)monogame.extended\3.8.0\contentFiles\any\netstandard2.0\mgfxc.runtimeconfig.dev.json" Condition="Exists('$(NuGetPackageRoot)monogame.extended\3.8.0\contentFiles\any\netstandard2.0\mgfxc.runtimeconfig.dev.json')">
+      <NuGetPackageId>MonoGame.Extended</NuGetPackageId>
+      <NuGetPackageVersion>3.8.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>mgfxc.runtimeconfig.dev.json</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)monogame.extended\3.8.0\contentFiles\any\netstandard2.0\mgfxc.runtimeconfig.json" Condition="Exists('$(NuGetPackageRoot)monogame.extended\3.8.0\contentFiles\any\netstandard2.0\mgfxc.runtimeconfig.json')">
+      <NuGetPackageId>MonoGame.Extended</NuGetPackageId>
+      <NuGetPackageVersion>3.8.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>mgfxc.runtimeconfig.json</Link>
+    </Content>
+  </ItemGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\atlas\ui-atlas.xnb" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\atlas\ui-atlas.xnb')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\atlas\ui-atlas.xnb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\atlas\ui.xnb" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\atlas\ui.xnb')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\atlas\ui.xnb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\common\button-states.xnb" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\common\button-states.xnb')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\common\button-states.xnb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\common\error.xnb" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\common\error.xnb')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\common\error.xnb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\common\menomonia.ttf" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\common\menomonia.ttf')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\common\menomonia.ttf</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\common\menomonia.xnb" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\common\menomonia.xnb')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\common\menomonia.xnb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\effects\alphamask.xnb" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\effects\alphamask.xnb')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\effects\alphamask.xnb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\effects\distancedissolve.xnb" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\effects\distancedissolve.xnb')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\effects\distancedissolve.xnb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\effects\glow.xnb" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\effects\glow.xnb')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\effects\glow.xnb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\effects\gw2master.xnb" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\effects\gw2master.xnb')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\effects\gw2master.xnb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\effects\marker.xnb" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\effects\marker.xnb')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\effects\marker.xnb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\effects\menuitem.xnb" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\effects\menuitem.xnb')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\effects\menuitem.xnb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\effects\menuitem2.xnb" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\effects\menuitem2.xnb')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\effects\menuitem2.xnb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\effects\silhouette.xnb" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\effects\silhouette.xnb')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\effects\silhouette.xnb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\effects\trail.xnb" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\effects\trail.xnb')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\effects\trail.xnb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\consolas-10-bold.xnb" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\consolas-10-bold.xnb')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\fonts\consolas-10-bold.xnb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\consolas-10.xnb" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\consolas-10.xnb')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\fonts\consolas-10.xnb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\consolas-12-bold.xnb" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\consolas-12-bold.xnb')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\fonts\consolas-12-bold.xnb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\consolas-12.xnb" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\consolas-12.xnb')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\fonts\consolas-12.xnb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\consolas-8-bold.xnb" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\consolas-8-bold.xnb')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\fonts\consolas-8-bold.xnb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\consolas-8.xnb" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\consolas-8.xnb')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\fonts\consolas-8.xnb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia-8-regular_0.xnb" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia-8-regular_0.xnb')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\fonts\menomonia-8-regular_0.xnb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-11-italic.xnb" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-11-italic.xnb')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\fonts\menomonia\menomonia-11-italic.xnb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-11-italic_0.xnb" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-11-italic_0.xnb')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\fonts\menomonia\menomonia-11-italic_0.xnb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-11-regular.xnb" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-11-regular.xnb')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\fonts\menomonia\menomonia-11-regular.xnb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-11-regular_0.xnb" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-11-regular_0.xnb')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\fonts\menomonia\menomonia-11-regular_0.xnb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-12-italic.xnb" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-12-italic.xnb')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\fonts\menomonia\menomonia-12-italic.xnb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-12-italic_0.xnb" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-12-italic_0.xnb')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\fonts\menomonia\menomonia-12-italic_0.xnb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-12-regular.xnb" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-12-regular.xnb')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\fonts\menomonia\menomonia-12-regular.xnb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-12-regular_0.xnb" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-12-regular_0.xnb')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\fonts\menomonia\menomonia-12-regular_0.xnb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-14-italic.xnb" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-14-italic.xnb')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\fonts\menomonia\menomonia-14-italic.xnb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-14-italic_0.xnb" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-14-italic_0.xnb')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\fonts\menomonia\menomonia-14-italic_0.xnb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-14-regular.xnb" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-14-regular.xnb')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\fonts\menomonia\menomonia-14-regular.xnb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-14-regular_0.xnb" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-14-regular_0.xnb')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\fonts\menomonia\menomonia-14-regular_0.xnb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-16-italic.xnb" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-16-italic.xnb')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\fonts\menomonia\menomonia-16-italic.xnb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-16-italic_0.xnb" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-16-italic_0.xnb')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\fonts\menomonia\menomonia-16-italic_0.xnb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-16-regular.xnb" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-16-regular.xnb')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\fonts\menomonia\menomonia-16-regular.xnb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-16-regular_0.xnb" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-16-regular_0.xnb')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\fonts\menomonia\menomonia-16-regular_0.xnb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-18-italic.xnb" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-18-italic.xnb')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\fonts\menomonia\menomonia-18-italic.xnb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-18-italic_0.xnb" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-18-italic_0.xnb')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\fonts\menomonia\menomonia-18-italic_0.xnb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-18-regular.xnb" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-18-regular.xnb')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\fonts\menomonia\menomonia-18-regular.xnb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-18-regular_0.xnb" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-18-regular_0.xnb')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\fonts\menomonia\menomonia-18-regular_0.xnb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-20-regular.xnb" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-20-regular.xnb')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\fonts\menomonia\menomonia-20-regular.xnb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-20-regular_0.xnb" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-20-regular_0.xnb')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\fonts\menomonia\menomonia-20-regular_0.xnb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-22-regular.xnb" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-22-regular.xnb')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\fonts\menomonia\menomonia-22-regular.xnb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-22-regular_0.xnb" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-22-regular_0.xnb')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\fonts\menomonia\menomonia-22-regular_0.xnb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-24-regular.xnb" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-24-regular.xnb')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\fonts\menomonia\menomonia-24-regular.xnb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-24-regular_0.xnb" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-24-regular_0.xnb')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\fonts\menomonia\menomonia-24-regular_0.xnb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-32-regular.xnb" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-32-regular.xnb')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\fonts\menomonia\menomonia-32-regular.xnb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-32-regular_0.xnb" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-32-regular_0.xnb')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\fonts\menomonia\menomonia-32-regular_0.xnb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-32-regular_1.xnb" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-32-regular_1.xnb')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\fonts\menomonia\menomonia-32-regular_1.xnb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-34-regular.xnb" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-34-regular.xnb')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\fonts\menomonia\menomonia-34-regular.xnb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-34-regular_0.xnb" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-34-regular_0.xnb')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\fonts\menomonia\menomonia-34-regular_0.xnb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-34-regular_1.xnb" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-34-regular_1.xnb')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\fonts\menomonia\menomonia-34-regular_1.xnb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-36-regular.xnb" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-36-regular.xnb')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\fonts\menomonia\menomonia-36-regular.xnb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-36-regular_0.xnb" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-36-regular_0.xnb')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\fonts\menomonia\menomonia-36-regular_0.xnb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-36-regular_1.xnb" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-36-regular_1.xnb')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\fonts\menomonia\menomonia-36-regular_1.xnb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-8-italic.xnb" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-8-italic.xnb')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\fonts\menomonia\menomonia-8-italic.xnb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-8-italic_0.xnb" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-8-italic_0.xnb')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\fonts\menomonia\menomonia-8-italic_0.xnb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-8-regular.xnb" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-8-regular.xnb')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\fonts\menomonia\menomonia-8-regular.xnb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-8-regular_0.xnb" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\menomonia\menomonia-8-regular_0.xnb')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\fonts\menomonia\menomonia-8-regular_0.xnb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\newkrytan\newkrytan-12-regular.xnb" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\newkrytan\newkrytan-12-regular.xnb')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\fonts\newkrytan\newkrytan-12-regular.xnb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\newkrytan\newkrytan-12-regular_0.xnb" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\newkrytan\newkrytan-12-regular_0.xnb')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\fonts\newkrytan\newkrytan-12-regular_0.xnb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\newkrytan\newkrytan-12-regular_1.xnb" Condition="Exists('$(NuGetPackageRoot)blishhud\0.11.6\contentFiles\any\net472\Content\bin\Windows\Content\fonts\newkrytan\newkrytan-12-regular_1.xnb')">
+      <NuGetPackageId>BlishHUD</NuGetPackageId>
+      <NuGetPackageVersion>0.11.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Content\bin\Windows\Content\fonts\newkrytan\newkrytan-12-regular_1.xnb</Link>
+    </Content>
+  </ItemGroup>
+</Project>

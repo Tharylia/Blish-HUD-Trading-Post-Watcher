@@ -1,0 +1,2144 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.7.2": {
+      "AsyncClipboardService/1.7.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/AsyncClipboardService.dll": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "BlishHUD/0.11.6": {
+        "type": "package",
+        "dependencies": {
+          "AsyncClipboardService": "[1.7.1]",
+          "Gapotchenko.FX.Diagnostics.Process": "2021.1.5",
+          "Gw2Sharp": "1.7.0",
+          "MonoGame.Extended": "[3.8.0]",
+          "MonoGame.Framework.WindowsDX": "[3.8.0.1641]",
+          "NAudio.Wasapi": "2.0.0",
+          "Newtonsoft.Json": "[13.0.1]",
+          "Ookii.Dialogs.WinForms": "4.0.0",
+          "System.IdentityModel.Tokens.Jwt": "6.14.1",
+          "System.Resources.Extensions": "6.0.0",
+          "protobuf-net": "3.0.101"
+        },
+        "compile": {
+          "lib/net472/Blish HUD.exe": {}
+        },
+        "runtime": {
+          "lib/net472/_._": {}
+        },
+        "contentFiles": {
+          "contentFiles/any/net472/Content/bin/Windows/Content/atlas/ui-atlas.xnb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net472/Content/bin/Windows/Content/atlas/ui.xnb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net472/Content/bin/Windows/Content/common/button-states.xnb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net472/Content/bin/Windows/Content/common/error.xnb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net472/Content/bin/Windows/Content/common/menomonia.ttf": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net472/Content/bin/Windows/Content/common/menomonia.xnb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net472/Content/bin/Windows/Content/effects/alphamask.xnb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net472/Content/bin/Windows/Content/effects/distancedissolve.xnb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net472/Content/bin/Windows/Content/effects/glow.xnb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net472/Content/bin/Windows/Content/effects/gw2master.xnb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net472/Content/bin/Windows/Content/effects/marker.xnb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net472/Content/bin/Windows/Content/effects/menuitem.xnb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net472/Content/bin/Windows/Content/effects/menuitem2.xnb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net472/Content/bin/Windows/Content/effects/silhouette.xnb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net472/Content/bin/Windows/Content/effects/trail.xnb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net472/Content/bin/Windows/Content/fonts/consolas-10-bold.xnb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net472/Content/bin/Windows/Content/fonts/consolas-10.xnb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net472/Content/bin/Windows/Content/fonts/consolas-12-bold.xnb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net472/Content/bin/Windows/Content/fonts/consolas-12.xnb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net472/Content/bin/Windows/Content/fonts/consolas-8-bold.xnb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net472/Content/bin/Windows/Content/fonts/consolas-8.xnb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia-8-regular_0.xnb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-11-italic.xnb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-11-italic_0.xnb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-11-regular.xnb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-11-regular_0.xnb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-12-italic.xnb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-12-italic_0.xnb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-12-regular.xnb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-12-regular_0.xnb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-14-italic.xnb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-14-italic_0.xnb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-14-regular.xnb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-14-regular_0.xnb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-16-italic.xnb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-16-italic_0.xnb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-16-regular.xnb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-16-regular_0.xnb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-18-italic.xnb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-18-italic_0.xnb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-18-regular.xnb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-18-regular_0.xnb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-20-regular.xnb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-20-regular_0.xnb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-22-regular.xnb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-22-regular_0.xnb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-24-regular.xnb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-24-regular_0.xnb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-32-regular.xnb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-32-regular_0.xnb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-32-regular_1.xnb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-34-regular.xnb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-34-regular_0.xnb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-34-regular_1.xnb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-36-regular.xnb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-36-regular_0.xnb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-36-regular_1.xnb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-8-italic.xnb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-8-italic_0.xnb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-8-regular.xnb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-8-regular_0.xnb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net472/Content/bin/Windows/Content/fonts/newkrytan/newkrytan-12-regular.xnb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net472/Content/bin/Windows/Content/fonts/newkrytan/newkrytan-12-regular_0.xnb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net472/Content/bin/Windows/Content/fonts/newkrytan/newkrytan-12-regular_1.xnb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        },
+        "build": {
+          "build/BlishHUD.targets": {}
+        }
+      },
+      "Gapotchenko.FX/2021.1.5": {
+        "type": "package",
+        "compile": {
+          "lib/net472/Gapotchenko.FX.dll": {}
+        },
+        "runtime": {
+          "lib/net472/_._": {}
+        }
+      },
+      "Gapotchenko.FX.Diagnostics.Process/2021.1.5": {
+        "type": "package",
+        "dependencies": {
+          "Gapotchenko.FX": "2021.1.5",
+          "Gapotchenko.FX.Threading": "2021.1.5"
+        },
+        "compile": {
+          "lib/net472/Gapotchenko.FX.Diagnostics.Process.dll": {}
+        },
+        "runtime": {
+          "lib/net472/_._": {}
+        }
+      },
+      "Gapotchenko.FX.Threading/2021.1.5": {
+        "type": "package",
+        "dependencies": {
+          "Gapotchenko.FX": "2021.1.5"
+        },
+        "compile": {
+          "lib/net472/Gapotchenko.FX.Threading.dll": {}
+        },
+        "runtime": {
+          "lib/net472/_._": {}
+        }
+      },
+      "Gw2Sharp/1.7.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Text.Json": "5.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Gw2Sharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/_._": {}
+        }
+      },
+      "Humanizer.Core/2.6.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Humanizer.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Humanizer.dll": {}
+        }
+      },
+      "Humanizer.Core.de/2.6.2": {
+        "type": "package",
+        "dependencies": {
+          "Humanizer.Core": "[2.6.2]"
+        },
+        "resource": {
+          "lib/netstandard2.0/de/Humanizer.resources.dll": {
+            "locale": "de"
+          }
+        }
+      },
+      "Humanizer.Core.es/2.6.2": {
+        "type": "package",
+        "dependencies": {
+          "Humanizer.Core": "[2.6.2]"
+        },
+        "resource": {
+          "lib/netstandard2.0/es/Humanizer.resources.dll": {
+            "locale": "es"
+          }
+        }
+      },
+      "Humanizer.Core.fr/2.6.2": {
+        "type": "package",
+        "dependencies": {
+          "Humanizer.Core": "[2.6.2]"
+        },
+        "resource": {
+          "lib/netstandard2.0/fr/Humanizer.resources.dll": {
+            "locale": "fr"
+          }
+        }
+      },
+      "Microsoft.Bcl.AsyncInterfaces/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "compile": {
+          "lib/net461/Microsoft.Bcl.AsyncInterfaces.dll": {}
+        },
+        "runtime": {
+          "lib/net461/_._": {}
+        }
+      },
+      "Microsoft.IdentityModel.JsonWebTokens/6.14.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Tokens": "6.14.1"
+        },
+        "compile": {
+          "lib/net472/Microsoft.IdentityModel.JsonWebTokens.dll": {}
+        },
+        "runtime": {
+          "lib/net472/_._": {}
+        }
+      },
+      "Microsoft.IdentityModel.Logging/6.14.1": {
+        "type": "package",
+        "compile": {
+          "lib/net472/Microsoft.IdentityModel.Logging.dll": {}
+        },
+        "runtime": {
+          "lib/net472/_._": {}
+        }
+      },
+      "Microsoft.IdentityModel.Tokens/6.14.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Logging": "6.14.1"
+        },
+        "compile": {
+          "lib/net472/Microsoft.IdentityModel.Tokens.dll": {}
+        },
+        "runtime": {
+          "lib/net472/_._": {}
+        }
+      },
+      "MonoGame.Extended/3.8.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/MonoGame.Extended.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/_._": {}
+        },
+        "contentFiles": {
+          "contentFiles/any/netstandard2.0/CppNet.dll": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/netstandard2.0/SharpDX.D3DCompiler.dll": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/netstandard2.0/SharpDX.D3DCompiler.xml": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/netstandard2.0/SharpDX.dll": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/netstandard2.0/SharpDX.xml": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/netstandard2.0/libmojoshader_64.dll": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/netstandard2.0/mgfxc.deps.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/netstandard2.0/mgfxc.dll": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/netstandard2.0/mgfxc.exe": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/netstandard2.0/mgfxc.pdb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/netstandard2.0/mgfxc.runtimeconfig.dev.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/netstandard2.0/mgfxc.runtimeconfig.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
+      "MonoGame.Framework.WindowsDX/3.8.0.1641": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "4.0.1",
+          "SharpDX.DXGI": "4.0.1",
+          "SharpDX.Direct2D1": "4.0.1",
+          "SharpDX.Direct3D11": "4.0.1",
+          "SharpDX.MediaFoundation": "4.0.1",
+          "SharpDX.XAudio2": "4.0.1",
+          "SharpDX.XInput": "4.0.1"
+        },
+        "compile": {
+          "lib/net452/MonoGame.Framework.dll": {}
+        },
+        "runtime": {
+          "lib/net452/_._": {}
+        },
+        "build": {
+          "build/MonoGame.Framework.WindowsDX.targets": {}
+        }
+      },
+      "NAudio.Core/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/NAudio.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/_._": {}
+        }
+      },
+      "NAudio.Wasapi/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "NAudio.Core": "2.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/NAudio.Wasapi.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/_._": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "Ookii.Dialogs.WinForms/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Resources.Extensions": "6.0.0"
+        },
+        "compile": {
+          "lib/net462/Ookii.Dialogs.WinForms.dll": {}
+        },
+        "runtime": {
+          "lib/net462/_._": {}
+        }
+      },
+      "protobuf-net/3.0.101": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.4",
+          "protobuf-net.Core": "3.0.101"
+        },
+        "compile": {
+          "lib/net461/protobuf-net.dll": {}
+        },
+        "runtime": {
+          "lib/net461/_._": {}
+        }
+      },
+      "protobuf-net.Core/3.0.101": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections.Immutable": "1.7.1",
+          "System.Memory": "4.5.4"
+        },
+        "compile": {
+          "lib/net461/protobuf-net.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net461/_._": {}
+        }
+      },
+      "SemanticVersioning/1.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/SemVer.dll": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "SharpDX/4.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/SharpDX.dll": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "SharpDX.Direct2D1/4.0.1": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "4.0.1",
+          "SharpDX.DXGI": "4.0.1"
+        },
+        "compile": {
+          "lib/net45/SharpDX.Direct2D1.dll": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "SharpDX.Direct3D11/4.0.1": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "4.0.1",
+          "SharpDX.DXGI": "4.0.1"
+        },
+        "compile": {
+          "lib/net45/SharpDX.Direct3D11.dll": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "SharpDX.Direct3D9/4.0.1": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "4.0.1"
+        },
+        "compile": {
+          "lib/net45/SharpDX.Direct3D9.dll": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "SharpDX.DXGI/4.0.1": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "4.0.1"
+        },
+        "compile": {
+          "lib/net45/SharpDX.DXGI.dll": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "SharpDX.Mathematics/4.0.1": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "4.0.1"
+        },
+        "compile": {
+          "lib/net45/SharpDX.Mathematics.dll": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "SharpDX.MediaFoundation/4.0.1": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "4.0.1",
+          "SharpDX.DXGI": "4.0.1",
+          "SharpDX.Direct3D9": "4.0.1",
+          "SharpDX.Mathematics": "4.0.1"
+        },
+        "compile": {
+          "lib/net45/SharpDX.MediaFoundation.dll": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "SharpDX.XAudio2/4.0.1": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "4.0.1"
+        },
+        "compile": {
+          "lib/net45/SharpDX.XAudio2.dll": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "SharpDX.XInput/4.0.1": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "4.0.1"
+        },
+        "compile": {
+          "lib/net45/SharpDX.XInput.dll": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.Buffers/4.5.1": {
+        "type": "package",
+        "compile": {
+          "ref/net45/System.Buffers.dll": {}
+        },
+        "runtime": {
+          "lib/net461/_._": {}
+        }
+      },
+      "System.Collections.Immutable/1.7.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.4"
+        },
+        "compile": {
+          "lib/net461/System.Collections.Immutable.dll": {}
+        },
+        "runtime": {
+          "lib/net461/_._": {}
+        }
+      },
+      "System.IdentityModel.Tokens.Jwt/6.14.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.JsonWebTokens": "6.14.1",
+          "Microsoft.IdentityModel.Tokens": "6.14.1"
+        },
+        "compile": {
+          "lib/net472/System.IdentityModel.Tokens.Jwt.dll": {}
+        },
+        "runtime": {
+          "lib/net472/_._": {}
+        }
+      },
+      "System.Memory/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.5.1",
+          "System.Numerics.Vectors": "4.5.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "compile": {
+          "lib/net461/System.Memory.dll": {}
+        },
+        "runtime": {
+          "lib/net461/_._": {}
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/net46/System.Numerics.Vectors.dll": {}
+        },
+        "runtime": {
+          "lib/net46/_._": {}
+        }
+      },
+      "System.Resources.Extensions/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.4"
+        },
+        "compile": {
+          "lib/net461/System.Resources.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/net461/_._": {}
+        },
+        "build": {
+          "buildTransitive/net461/System.Resources.Extensions.targets": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/5.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/net461/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.Text.Encodings.Web/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.4"
+        },
+        "compile": {
+          "lib/net461/System.Text.Encodings.Web.dll": {}
+        },
+        "runtime": {
+          "lib/net461/_._": {}
+        }
+      },
+      "System.Text.Json/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "5.0.0",
+          "System.Buffers": "4.5.1",
+          "System.Memory": "4.5.4",
+          "System.Numerics.Vectors": "4.5.0",
+          "System.Runtime.CompilerServices.Unsafe": "5.0.0",
+          "System.Text.Encodings.Web": "5.0.0",
+          "System.Threading.Tasks.Extensions": "4.5.4",
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/net461/System.Text.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net461/_._": {}
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "compile": {
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/net461/_._": {}
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/net47/System.ValueTuple.dll": {}
+        },
+        "runtime": {
+          "lib/net47/_._": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AsyncClipboardService/1.7.1": {
+      "sha512": "9jMkkVuNfd48+ElVajLkJTyKP5dXBwMqYfDS3qXz8EMiWaeTZ12AJHDbosDJvQBJRJetPuLQDaLuI6ZgVSI8Mw==",
+      "type": "package",
+      "path": "asyncclipboardservice/1.7.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "README.md",
+        "asyncclipboardservice.1.7.1.nupkg.sha512",
+        "asyncclipboardservice.nuspec",
+        "icon.png",
+        "lib/net45/AsyncClipboardService.dll",
+        "lib/net45/AsyncClipboardService.pdb",
+        "lib/net45/AsyncClipboardService.xml",
+        "lib/netstandard2.0/AsyncClipboardService.dll",
+        "lib/netstandard2.0/AsyncClipboardService.pdb",
+        "lib/netstandard2.0/AsyncClipboardService.xml"
+      ]
+    },
+    "BlishHUD/0.11.6": {
+      "sha512": "iK8sus0X/bEuxaHOoV/z828uyX8/lVXUAwVj520rBzoRPMKGnui8AjsFjZOJ1cfWfcLNlHWasJWmQcpd+/449A==",
+      "type": "package",
+      "path": "blishhud/0.11.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "blishhud.0.11.6.nupkg.sha512",
+        "blishhud.nuspec",
+        "build/BlishHUD.targets",
+        "content/Content/bin/Windows/Content/atlas/ui-atlas.xnb",
+        "content/Content/bin/Windows/Content/atlas/ui.xnb",
+        "content/Content/bin/Windows/Content/common/button-states.xnb",
+        "content/Content/bin/Windows/Content/common/error.xnb",
+        "content/Content/bin/Windows/Content/common/menomonia.ttf",
+        "content/Content/bin/Windows/Content/common/menomonia.xnb",
+        "content/Content/bin/Windows/Content/effects/alphamask.xnb",
+        "content/Content/bin/Windows/Content/effects/distancedissolve.xnb",
+        "content/Content/bin/Windows/Content/effects/glow.xnb",
+        "content/Content/bin/Windows/Content/effects/gw2master.xnb",
+        "content/Content/bin/Windows/Content/effects/marker.xnb",
+        "content/Content/bin/Windows/Content/effects/menuitem.xnb",
+        "content/Content/bin/Windows/Content/effects/menuitem2.xnb",
+        "content/Content/bin/Windows/Content/effects/silhouette.xnb",
+        "content/Content/bin/Windows/Content/effects/trail.xnb",
+        "content/Content/bin/Windows/Content/fonts/consolas-10-bold.xnb",
+        "content/Content/bin/Windows/Content/fonts/consolas-10.xnb",
+        "content/Content/bin/Windows/Content/fonts/consolas-12-bold.xnb",
+        "content/Content/bin/Windows/Content/fonts/consolas-12.xnb",
+        "content/Content/bin/Windows/Content/fonts/consolas-8-bold.xnb",
+        "content/Content/bin/Windows/Content/fonts/consolas-8.xnb",
+        "content/Content/bin/Windows/Content/fonts/menomonia-8-regular_0.xnb",
+        "content/Content/bin/Windows/Content/fonts/menomonia/menomonia-11-italic.xnb",
+        "content/Content/bin/Windows/Content/fonts/menomonia/menomonia-11-italic_0.xnb",
+        "content/Content/bin/Windows/Content/fonts/menomonia/menomonia-11-regular.xnb",
+        "content/Content/bin/Windows/Content/fonts/menomonia/menomonia-11-regular_0.xnb",
+        "content/Content/bin/Windows/Content/fonts/menomonia/menomonia-12-italic.xnb",
+        "content/Content/bin/Windows/Content/fonts/menomonia/menomonia-12-italic_0.xnb",
+        "content/Content/bin/Windows/Content/fonts/menomonia/menomonia-12-regular.xnb",
+        "content/Content/bin/Windows/Content/fonts/menomonia/menomonia-12-regular_0.xnb",
+        "content/Content/bin/Windows/Content/fonts/menomonia/menomonia-14-italic.xnb",
+        "content/Content/bin/Windows/Content/fonts/menomonia/menomonia-14-italic_0.xnb",
+        "content/Content/bin/Windows/Content/fonts/menomonia/menomonia-14-regular.xnb",
+        "content/Content/bin/Windows/Content/fonts/menomonia/menomonia-14-regular_0.xnb",
+        "content/Content/bin/Windows/Content/fonts/menomonia/menomonia-16-italic.xnb",
+        "content/Content/bin/Windows/Content/fonts/menomonia/menomonia-16-italic_0.xnb",
+        "content/Content/bin/Windows/Content/fonts/menomonia/menomonia-16-regular.xnb",
+        "content/Content/bin/Windows/Content/fonts/menomonia/menomonia-16-regular_0.xnb",
+        "content/Content/bin/Windows/Content/fonts/menomonia/menomonia-18-italic.xnb",
+        "content/Content/bin/Windows/Content/fonts/menomonia/menomonia-18-italic_0.xnb",
+        "content/Content/bin/Windows/Content/fonts/menomonia/menomonia-18-regular.xnb",
+        "content/Content/bin/Windows/Content/fonts/menomonia/menomonia-18-regular_0.xnb",
+        "content/Content/bin/Windows/Content/fonts/menomonia/menomonia-20-regular.xnb",
+        "content/Content/bin/Windows/Content/fonts/menomonia/menomonia-20-regular_0.xnb",
+        "content/Content/bin/Windows/Content/fonts/menomonia/menomonia-22-regular.xnb",
+        "content/Content/bin/Windows/Content/fonts/menomonia/menomonia-22-regular_0.xnb",
+        "content/Content/bin/Windows/Content/fonts/menomonia/menomonia-24-regular.xnb",
+        "content/Content/bin/Windows/Content/fonts/menomonia/menomonia-24-regular_0.xnb",
+        "content/Content/bin/Windows/Content/fonts/menomonia/menomonia-32-regular.xnb",
+        "content/Content/bin/Windows/Content/fonts/menomonia/menomonia-32-regular_0.xnb",
+        "content/Content/bin/Windows/Content/fonts/menomonia/menomonia-32-regular_1.xnb",
+        "content/Content/bin/Windows/Content/fonts/menomonia/menomonia-34-regular.xnb",
+        "content/Content/bin/Windows/Content/fonts/menomonia/menomonia-34-regular_0.xnb",
+        "content/Content/bin/Windows/Content/fonts/menomonia/menomonia-34-regular_1.xnb",
+        "content/Content/bin/Windows/Content/fonts/menomonia/menomonia-36-regular.xnb",
+        "content/Content/bin/Windows/Content/fonts/menomonia/menomonia-36-regular_0.xnb",
+        "content/Content/bin/Windows/Content/fonts/menomonia/menomonia-36-regular_1.xnb",
+        "content/Content/bin/Windows/Content/fonts/menomonia/menomonia-8-italic.xnb",
+        "content/Content/bin/Windows/Content/fonts/menomonia/menomonia-8-italic_0.xnb",
+        "content/Content/bin/Windows/Content/fonts/menomonia/menomonia-8-regular.xnb",
+        "content/Content/bin/Windows/Content/fonts/menomonia/menomonia-8-regular_0.xnb",
+        "content/Content/bin/Windows/Content/fonts/newkrytan/newkrytan-12-regular.xnb",
+        "content/Content/bin/Windows/Content/fonts/newkrytan/newkrytan-12-regular_0.xnb",
+        "content/Content/bin/Windows/Content/fonts/newkrytan/newkrytan-12-regular_1.xnb",
+        "contentFiles/any/net472/Content/bin/Windows/Content/atlas/ui-atlas.xnb",
+        "contentFiles/any/net472/Content/bin/Windows/Content/atlas/ui.xnb",
+        "contentFiles/any/net472/Content/bin/Windows/Content/common/button-states.xnb",
+        "contentFiles/any/net472/Content/bin/Windows/Content/common/error.xnb",
+        "contentFiles/any/net472/Content/bin/Windows/Content/common/menomonia.ttf",
+        "contentFiles/any/net472/Content/bin/Windows/Content/common/menomonia.xnb",
+        "contentFiles/any/net472/Content/bin/Windows/Content/effects/alphamask.xnb",
+        "contentFiles/any/net472/Content/bin/Windows/Content/effects/distancedissolve.xnb",
+        "contentFiles/any/net472/Content/bin/Windows/Content/effects/glow.xnb",
+        "contentFiles/any/net472/Content/bin/Windows/Content/effects/gw2master.xnb",
+        "contentFiles/any/net472/Content/bin/Windows/Content/effects/marker.xnb",
+        "contentFiles/any/net472/Content/bin/Windows/Content/effects/menuitem.xnb",
+        "contentFiles/any/net472/Content/bin/Windows/Content/effects/menuitem2.xnb",
+        "contentFiles/any/net472/Content/bin/Windows/Content/effects/silhouette.xnb",
+        "contentFiles/any/net472/Content/bin/Windows/Content/effects/trail.xnb",
+        "contentFiles/any/net472/Content/bin/Windows/Content/fonts/consolas-10-bold.xnb",
+        "contentFiles/any/net472/Content/bin/Windows/Content/fonts/consolas-10.xnb",
+        "contentFiles/any/net472/Content/bin/Windows/Content/fonts/consolas-12-bold.xnb",
+        "contentFiles/any/net472/Content/bin/Windows/Content/fonts/consolas-12.xnb",
+        "contentFiles/any/net472/Content/bin/Windows/Content/fonts/consolas-8-bold.xnb",
+        "contentFiles/any/net472/Content/bin/Windows/Content/fonts/consolas-8.xnb",
+        "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia-8-regular_0.xnb",
+        "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-11-italic.xnb",
+        "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-11-italic_0.xnb",
+        "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-11-regular.xnb",
+        "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-11-regular_0.xnb",
+        "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-12-italic.xnb",
+        "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-12-italic_0.xnb",
+        "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-12-regular.xnb",
+        "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-12-regular_0.xnb",
+        "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-14-italic.xnb",
+        "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-14-italic_0.xnb",
+        "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-14-regular.xnb",
+        "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-14-regular_0.xnb",
+        "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-16-italic.xnb",
+        "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-16-italic_0.xnb",
+        "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-16-regular.xnb",
+        "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-16-regular_0.xnb",
+        "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-18-italic.xnb",
+        "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-18-italic_0.xnb",
+        "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-18-regular.xnb",
+        "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-18-regular_0.xnb",
+        "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-20-regular.xnb",
+        "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-20-regular_0.xnb",
+        "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-22-regular.xnb",
+        "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-22-regular_0.xnb",
+        "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-24-regular.xnb",
+        "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-24-regular_0.xnb",
+        "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-32-regular.xnb",
+        "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-32-regular_0.xnb",
+        "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-32-regular_1.xnb",
+        "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-34-regular.xnb",
+        "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-34-regular_0.xnb",
+        "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-34-regular_1.xnb",
+        "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-36-regular.xnb",
+        "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-36-regular_0.xnb",
+        "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-36-regular_1.xnb",
+        "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-8-italic.xnb",
+        "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-8-italic_0.xnb",
+        "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-8-regular.xnb",
+        "contentFiles/any/net472/Content/bin/Windows/Content/fonts/menomonia/menomonia-8-regular_0.xnb",
+        "contentFiles/any/net472/Content/bin/Windows/Content/fonts/newkrytan/newkrytan-12-regular.xnb",
+        "contentFiles/any/net472/Content/bin/Windows/Content/fonts/newkrytan/newkrytan-12-regular_0.xnb",
+        "contentFiles/any/net472/Content/bin/Windows/Content/fonts/newkrytan/newkrytan-12-regular_1.xnb",
+        "lib/net472/Blish HUD.exe",
+        "lib/net472/de/Blish HUD.resources.dll",
+        "lib/net472/es/Blish HUD.resources.dll",
+        "lib/net472/fr/Blish HUD.resources.dll"
+      ]
+    },
+    "Gapotchenko.FX/2021.1.5": {
+      "sha512": "zDGtfSXvoZ/vH9gwQi/ygfi80l9VeDvLS7SQBhHm0SAvCz/zJiHW7oeHg5RtK+XUZg79xc4Zskb9/CcafibwZw==",
+      "type": "package",
+      "path": "gapotchenko.fx/2021.1.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "PackageIcon.png",
+        "gapotchenko.fx.2021.1.5.nupkg.sha512",
+        "gapotchenko.fx.nuspec",
+        "lib/net45/Gapotchenko.FX.dll",
+        "lib/net45/Gapotchenko.FX.xml",
+        "lib/net46/Gapotchenko.FX.dll",
+        "lib/net46/Gapotchenko.FX.xml",
+        "lib/net471/Gapotchenko.FX.dll",
+        "lib/net471/Gapotchenko.FX.xml",
+        "lib/net472/Gapotchenko.FX.dll",
+        "lib/net472/Gapotchenko.FX.xml",
+        "lib/net5.0/Gapotchenko.FX.dll",
+        "lib/net5.0/Gapotchenko.FX.xml",
+        "lib/net6.0/Gapotchenko.FX.dll",
+        "lib/net6.0/Gapotchenko.FX.xml",
+        "lib/netcoreapp2.0/Gapotchenko.FX.dll",
+        "lib/netcoreapp2.0/Gapotchenko.FX.xml",
+        "lib/netcoreapp2.1/Gapotchenko.FX.dll",
+        "lib/netcoreapp2.1/Gapotchenko.FX.xml",
+        "lib/netcoreapp3.0/Gapotchenko.FX.dll",
+        "lib/netcoreapp3.0/Gapotchenko.FX.xml",
+        "lib/netstandard2.0/Gapotchenko.FX.dll",
+        "lib/netstandard2.0/Gapotchenko.FX.xml",
+        "lib/netstandard2.1/Gapotchenko.FX.dll",
+        "lib/netstandard2.1/Gapotchenko.FX.xml"
+      ]
+    },
+    "Gapotchenko.FX.Diagnostics.Process/2021.1.5": {
+      "sha512": "G/r0qT1i51EgldhiC+UChkXcIsp9CLB9Aezhar+E9g4qWAX8y0CMg6DL6MFNGdH9S+N0tAelsC9D7Cv9Iz6I0g==",
+      "type": "package",
+      "path": "gapotchenko.fx.diagnostics.process/2021.1.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "PackageIcon.png",
+        "gapotchenko.fx.diagnostics.process.2021.1.5.nupkg.sha512",
+        "gapotchenko.fx.diagnostics.process.nuspec",
+        "lib/net45/Gapotchenko.FX.Diagnostics.Process.dll",
+        "lib/net45/Gapotchenko.FX.Diagnostics.Process.xml",
+        "lib/net46/Gapotchenko.FX.Diagnostics.Process.dll",
+        "lib/net46/Gapotchenko.FX.Diagnostics.Process.xml",
+        "lib/net471/Gapotchenko.FX.Diagnostics.Process.dll",
+        "lib/net471/Gapotchenko.FX.Diagnostics.Process.xml",
+        "lib/net472/Gapotchenko.FX.Diagnostics.Process.dll",
+        "lib/net472/Gapotchenko.FX.Diagnostics.Process.xml",
+        "lib/net5.0/Gapotchenko.FX.Diagnostics.Process.dll",
+        "lib/net5.0/Gapotchenko.FX.Diagnostics.Process.xml",
+        "lib/net6.0/Gapotchenko.FX.Diagnostics.Process.dll",
+        "lib/net6.0/Gapotchenko.FX.Diagnostics.Process.xml",
+        "lib/netcoreapp2.0/Gapotchenko.FX.Diagnostics.Process.dll",
+        "lib/netcoreapp2.0/Gapotchenko.FX.Diagnostics.Process.xml",
+        "lib/netcoreapp2.1/Gapotchenko.FX.Diagnostics.Process.dll",
+        "lib/netcoreapp2.1/Gapotchenko.FX.Diagnostics.Process.xml",
+        "lib/netcoreapp3.0/Gapotchenko.FX.Diagnostics.Process.dll",
+        "lib/netcoreapp3.0/Gapotchenko.FX.Diagnostics.Process.xml",
+        "lib/netstandard2.0/Gapotchenko.FX.Diagnostics.Process.dll",
+        "lib/netstandard2.0/Gapotchenko.FX.Diagnostics.Process.xml",
+        "lib/netstandard2.1/Gapotchenko.FX.Diagnostics.Process.dll",
+        "lib/netstandard2.1/Gapotchenko.FX.Diagnostics.Process.xml"
+      ]
+    },
+    "Gapotchenko.FX.Threading/2021.1.5": {
+      "sha512": "BsM2G7IZVycR3FAoqX14xncNVuA8EGS8U72HJRiShzQowxiNhX+fXuLgPnz9Qg0tI9Drvg5qSGqjF0/CNEEmDQ==",
+      "type": "package",
+      "path": "gapotchenko.fx.threading/2021.1.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "PackageIcon.png",
+        "gapotchenko.fx.threading.2021.1.5.nupkg.sha512",
+        "gapotchenko.fx.threading.nuspec",
+        "lib/net45/Gapotchenko.FX.Threading.dll",
+        "lib/net45/Gapotchenko.FX.Threading.xml",
+        "lib/net46/Gapotchenko.FX.Threading.dll",
+        "lib/net46/Gapotchenko.FX.Threading.xml",
+        "lib/net471/Gapotchenko.FX.Threading.dll",
+        "lib/net471/Gapotchenko.FX.Threading.xml",
+        "lib/net472/Gapotchenko.FX.Threading.dll",
+        "lib/net472/Gapotchenko.FX.Threading.xml",
+        "lib/net5.0/Gapotchenko.FX.Threading.dll",
+        "lib/net5.0/Gapotchenko.FX.Threading.xml",
+        "lib/net6.0/Gapotchenko.FX.Threading.dll",
+        "lib/net6.0/Gapotchenko.FX.Threading.xml",
+        "lib/netcoreapp2.0/Gapotchenko.FX.Threading.dll",
+        "lib/netcoreapp2.0/Gapotchenko.FX.Threading.xml",
+        "lib/netcoreapp2.1/Gapotchenko.FX.Threading.dll",
+        "lib/netcoreapp2.1/Gapotchenko.FX.Threading.xml",
+        "lib/netcoreapp3.0/Gapotchenko.FX.Threading.dll",
+        "lib/netcoreapp3.0/Gapotchenko.FX.Threading.xml",
+        "lib/netstandard2.0/Gapotchenko.FX.Threading.dll",
+        "lib/netstandard2.0/Gapotchenko.FX.Threading.xml",
+        "lib/netstandard2.1/Gapotchenko.FX.Threading.dll",
+        "lib/netstandard2.1/Gapotchenko.FX.Threading.xml"
+      ]
+    },
+    "Gw2Sharp/1.7.0": {
+      "sha512": "i2xOupMYXTFELyNoHGeIf6upy4nNFc7E2lppc6Ki7XtlGhKDbAX+Rm5tl+jbZWVQjQ0fg2PbdHJpyAnLX9BWqQ==",
+      "type": "package",
+      "path": "gw2sharp/1.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "gw2sharp.1.7.0.nupkg.sha512",
+        "gw2sharp.nuspec",
+        "lib/net5.0/Gw2Sharp.dll",
+        "lib/net5.0/Gw2Sharp.xml",
+        "lib/netcoreapp3.1/Gw2Sharp.dll",
+        "lib/netcoreapp3.1/Gw2Sharp.xml",
+        "lib/netstandard2.0/Gw2Sharp.dll",
+        "lib/netstandard2.0/Gw2Sharp.xml"
+      ]
+    },
+    "Humanizer.Core/2.6.2": {
+      "sha512": "17m0EzOAzzXQ387sHqGNIHSCZCrJ9nCwJoJ4jC6oCTG6KHhfbq4V9i/wSbTjNLYPbvrMPSc7MlF1f7qCZwxLdQ==",
+      "type": "package",
+      "path": "humanizer.core/2.6.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "humanizer.core.2.6.2.nupkg.sha512",
+        "humanizer.core.nuspec",
+        "lib/netstandard1.0/Humanizer.dll",
+        "lib/netstandard1.0/Humanizer.xml",
+        "lib/netstandard2.0/Humanizer.dll",
+        "lib/netstandard2.0/Humanizer.xml"
+      ]
+    },
+    "Humanizer.Core.de/2.6.2": {
+      "sha512": "8uYUhWyhHspGLsoA4yiScuAohkie+ePXxs0zKAahBXN9LTtuU0vVVIp+sO/Pl/I/3jkXXfPVxQ0wahzrxWOPhA==",
+      "type": "package",
+      "path": "humanizer.core.de/2.6.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "humanizer.core.de.2.6.2.nupkg.sha512",
+        "humanizer.core.de.nuspec",
+        "lib/netstandard1.0/de/Humanizer.resources.dll",
+        "lib/netstandard2.0/de/Humanizer.resources.dll"
+      ]
+    },
+    "Humanizer.Core.es/2.6.2": {
+      "sha512": "4L8TvHQ0kKLX3BqMcNp/HUpiLxVJ+DUGOswUhZ+MWK7bhdpJJkEfDhuLok0u07gHlbvj1s6MHXhyJwx2M2cYSw==",
+      "type": "package",
+      "path": "humanizer.core.es/2.6.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "humanizer.core.es.2.6.2.nupkg.sha512",
+        "humanizer.core.es.nuspec",
+        "lib/netstandard1.0/es/Humanizer.resources.dll",
+        "lib/netstandard2.0/es/Humanizer.resources.dll"
+      ]
+    },
+    "Humanizer.Core.fr/2.6.2": {
+      "sha512": "gr0mbIwGNOSX8Z5XX8qEeVRtkCqhvJCSOx6XVIk2gqzaOrGGAXMcZZJKAEHI/WJvgGgL//X9zpi7hdHhkTydOA==",
+      "type": "package",
+      "path": "humanizer.core.fr/2.6.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "humanizer.core.fr.2.6.2.nupkg.sha512",
+        "humanizer.core.fr.nuspec",
+        "lib/netstandard1.0/fr/Humanizer.resources.dll",
+        "lib/netstandard2.0/fr/Humanizer.resources.dll"
+      ]
+    },
+    "Microsoft.Bcl.AsyncInterfaces/5.0.0": {
+      "sha512": "W8DPQjkMScOMTtJbPwmPyj9c3zYSFGawDW3jwlBOOsnY+EzZFLgNQ/UMkK35JmkNOVPdCyPr2Tw7Vv9N+KA3ZQ==",
+      "type": "package",
+      "path": "microsoft.bcl.asyncinterfaces/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Bcl.AsyncInterfaces.dll",
+        "lib/net461/Microsoft.Bcl.AsyncInterfaces.xml",
+        "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll",
+        "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.xml",
+        "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
+        "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.xml",
+        "microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
+        "microsoft.bcl.asyncinterfaces.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.IdentityModel.JsonWebTokens/6.14.1": {
+      "sha512": "9/KU/JWhTJ8Cs7YwfQD1ihoTiVUI7HI0ZoqdOGhKiRoV855wE5O1O9stIZzAZ/ES1b4X+j21ULkQGO3a3mK22w==",
+      "type": "package",
+      "path": "microsoft.identitymodel.jsonwebtokens/6.14.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Microsoft.IdentityModel.JsonWebTokens.dll",
+        "lib/net45/Microsoft.IdentityModel.JsonWebTokens.xml",
+        "lib/net461/Microsoft.IdentityModel.JsonWebTokens.dll",
+        "lib/net461/Microsoft.IdentityModel.JsonWebTokens.xml",
+        "lib/net472/Microsoft.IdentityModel.JsonWebTokens.dll",
+        "lib/net472/Microsoft.IdentityModel.JsonWebTokens.xml",
+        "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.dll",
+        "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.xml",
+        "microsoft.identitymodel.jsonwebtokens.6.14.1.nupkg.sha512",
+        "microsoft.identitymodel.jsonwebtokens.nuspec"
+      ]
+    },
+    "Microsoft.IdentityModel.Logging/6.14.1": {
+      "sha512": "yjB8cYrRwQp/sX0JhpXHggUwF4YhyMoVE0Mzdyc9Z0gFikOej4dUNlnG7H9J5SCmI2xjLAYxinyDIzmGBFqCbg==",
+      "type": "package",
+      "path": "microsoft.identitymodel.logging/6.14.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Microsoft.IdentityModel.Logging.dll",
+        "lib/net45/Microsoft.IdentityModel.Logging.xml",
+        "lib/net461/Microsoft.IdentityModel.Logging.dll",
+        "lib/net461/Microsoft.IdentityModel.Logging.xml",
+        "lib/net472/Microsoft.IdentityModel.Logging.dll",
+        "lib/net472/Microsoft.IdentityModel.Logging.xml",
+        "lib/netstandard2.0/Microsoft.IdentityModel.Logging.dll",
+        "lib/netstandard2.0/Microsoft.IdentityModel.Logging.xml",
+        "microsoft.identitymodel.logging.6.14.1.nupkg.sha512",
+        "microsoft.identitymodel.logging.nuspec"
+      ]
+    },
+    "Microsoft.IdentityModel.Tokens/6.14.1": {
+      "sha512": "14Z15Rwd0V6+m7mxbRWH2CrT2PK/B3H3R8qGNDeI6lSPFIQTq/1AJaYkCGcVX1xlKSowdNYaAROMaPbiWv8KIQ==",
+      "type": "package",
+      "path": "microsoft.identitymodel.tokens/6.14.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Microsoft.IdentityModel.Tokens.dll",
+        "lib/net45/Microsoft.IdentityModel.Tokens.xml",
+        "lib/net461/Microsoft.IdentityModel.Tokens.dll",
+        "lib/net461/Microsoft.IdentityModel.Tokens.xml",
+        "lib/net472/Microsoft.IdentityModel.Tokens.dll",
+        "lib/net472/Microsoft.IdentityModel.Tokens.xml",
+        "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.dll",
+        "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.xml",
+        "microsoft.identitymodel.tokens.6.14.1.nupkg.sha512",
+        "microsoft.identitymodel.tokens.nuspec"
+      ]
+    },
+    "MonoGame.Extended/3.8.0": {
+      "sha512": "FDPoUOFtslGNHCWSqjKD0C67RYN6Stb6NWnn+rkCmtkPBZlE6LvwuGyQBkHUkAMANO3LzO/Wsz9etMhwZLInqg==",
+      "type": "package",
+      "path": "monogame.extended/3.8.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/CppNet.dll",
+        "content/SharpDX.D3DCompiler.dll",
+        "content/SharpDX.D3DCompiler.xml",
+        "content/SharpDX.dll",
+        "content/SharpDX.xml",
+        "content/libmojoshader_64.dll",
+        "content/mgfxc.deps.json",
+        "content/mgfxc.dll",
+        "content/mgfxc.exe",
+        "content/mgfxc.pdb",
+        "content/mgfxc.runtimeconfig.dev.json",
+        "content/mgfxc.runtimeconfig.json",
+        "contentFiles/any/netstandard2.0/CppNet.dll",
+        "contentFiles/any/netstandard2.0/SharpDX.D3DCompiler.dll",
+        "contentFiles/any/netstandard2.0/SharpDX.D3DCompiler.xml",
+        "contentFiles/any/netstandard2.0/SharpDX.dll",
+        "contentFiles/any/netstandard2.0/SharpDX.xml",
+        "contentFiles/any/netstandard2.0/libmojoshader_64.dll",
+        "contentFiles/any/netstandard2.0/mgfxc.deps.json",
+        "contentFiles/any/netstandard2.0/mgfxc.dll",
+        "contentFiles/any/netstandard2.0/mgfxc.exe",
+        "contentFiles/any/netstandard2.0/mgfxc.pdb",
+        "contentFiles/any/netstandard2.0/mgfxc.runtimeconfig.dev.json",
+        "contentFiles/any/netstandard2.0/mgfxc.runtimeconfig.json",
+        "lib/netstandard2.0/MonoGame.Extended.dll",
+        "monogame.extended.3.8.0.nupkg.sha512",
+        "monogame.extended.nuspec"
+      ]
+    },
+    "MonoGame.Framework.WindowsDX/3.8.0.1641": {
+      "sha512": "uWPGugWXe0eqrA5KgKc38z2K+RNgh8DmIDjIDdc7JX8m7azYDkNapHwIOANkEj5ZYAr7uqxjoqGcU4VS+ayl1g==",
+      "type": "package",
+      "path": "monogame.framework.windowsdx/3.8.0.1641",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "build/MonoGame.Framework.WindowsDX.targets",
+        "lib/net452/MonoGame.Framework.dll",
+        "lib/net452/MonoGame.Framework.xml",
+        "lib/netcoreapp3.1/MonoGame.Framework.dll",
+        "lib/netcoreapp3.1/MonoGame.Framework.xml",
+        "monogame.framework.windowsdx.3.8.0.1641.nupkg.sha512",
+        "monogame.framework.windowsdx.nuspec"
+      ]
+    },
+    "NAudio.Core/2.0.0": {
+      "sha512": "knmGOIYbzn9ZGkFcVs5d3zEYvi50jVriyEirVtAHjkcDoo2ziK32bZb7KkFARLD4lhCGkqp6uT0+0fc4JIfQcw==",
+      "type": "package",
+      "path": "naudio.core/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/NAudio.Core.dll",
+        "naudio-icon.png",
+        "naudio.core.2.0.0.nupkg.sha512",
+        "naudio.core.nuspec"
+      ]
+    },
+    "NAudio.Wasapi/2.0.0": {
+      "sha512": "7ES+jfZyOooBp86gql9BZ/OjKFmGfLaSLCtJagtCYiRGxfauHp4hXyeuwxS2mPLBxBGxBo9oGThN6y3QY+/w/w==",
+      "type": "package",
+      "path": "naudio.wasapi/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/NAudio.Wasapi.dll",
+        "lib/uap10.0.17763/NAudio.Wasapi.dll",
+        "lib/uap10.0.17763/NAudio.Wasapi.pri",
+        "naudio-icon.png",
+        "naudio.wasapi.2.0.0.nupkg.sha512",
+        "naudio.wasapi.nuspec"
+      ]
+    },
+    "Newtonsoft.Json/13.0.1": {
+      "sha512": "ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.1.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
+    "Ookii.Dialogs.WinForms/4.0.0": {
+      "sha512": "iBWCO5C3vc8uxDzCrZs4dtCK/MQOFG4qrcJxBRO+hHQ39SqnNhMWE/kxhCLa/D5Pxud9t+2bkC6kIanPn57VGA==",
+      "type": "package",
+      "path": "ookii.dialogs.winforms/4.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "images/icon.png",
+        "lib/net462/Ookii.Dialogs.WinForms.dll",
+        "lib/net462/Ookii.Dialogs.WinForms.pdb",
+        "lib/net5.0-windows7.0/Ookii.Dialogs.WinForms.dll",
+        "lib/net5.0-windows7.0/Ookii.Dialogs.WinForms.pdb",
+        "lib/net6.0-windows7.0/Ookii.Dialogs.WinForms.dll",
+        "lib/net6.0-windows7.0/Ookii.Dialogs.WinForms.pdb",
+        "lib/netcoreapp3.1/Ookii.Dialogs.WinForms.dll",
+        "lib/netcoreapp3.1/Ookii.Dialogs.WinForms.pdb",
+        "ookii.dialogs.winforms.4.0.0.nupkg.sha512",
+        "ookii.dialogs.winforms.nuspec"
+      ]
+    },
+    "protobuf-net/3.0.101": {
+      "sha512": "mLm8VGfGylp9q+rbJDp3uw0BOeNzfGENecVz/EYGlzq3ss7tfajGXHCMoZm/GxJ9vSn9pcK22UXWZnQ5GJQMjA==",
+      "type": "package",
+      "path": "protobuf-net/3.0.101",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/protobuf-net.dll",
+        "lib/net461/protobuf-net.xml",
+        "lib/net5.0/protobuf-net.dll",
+        "lib/net5.0/protobuf-net.xml",
+        "lib/netcoreapp3.1/protobuf-net.dll",
+        "lib/netcoreapp3.1/protobuf-net.xml",
+        "lib/netstandard2.0/protobuf-net.dll",
+        "lib/netstandard2.0/protobuf-net.xml",
+        "lib/netstandard2.1/protobuf-net.dll",
+        "lib/netstandard2.1/protobuf-net.xml",
+        "protobuf-net.3.0.101.nupkg.sha512",
+        "protobuf-net.nuspec",
+        "protobuf-net.png"
+      ]
+    },
+    "protobuf-net.Core/3.0.101": {
+      "sha512": "gf9QIF0RlctfjmOjbE6eOyMulkNEsH7tHncjKj/4BTu9tkuTyrH3fv5I+35GnolJqKJ6fh9kYaezvNRL3t75+Q==",
+      "type": "package",
+      "path": "protobuf-net.core/3.0.101",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/protobuf-net.Core.dll",
+        "lib/net461/protobuf-net.Core.xml",
+        "lib/net5.0/protobuf-net.Core.dll",
+        "lib/net5.0/protobuf-net.Core.xml",
+        "lib/netcoreapp3.1/protobuf-net.Core.dll",
+        "lib/netcoreapp3.1/protobuf-net.Core.xml",
+        "lib/netstandard2.0/protobuf-net.Core.dll",
+        "lib/netstandard2.0/protobuf-net.Core.xml",
+        "lib/netstandard2.1/protobuf-net.Core.dll",
+        "lib/netstandard2.1/protobuf-net.Core.xml",
+        "protobuf-net.core.3.0.101.nupkg.sha512",
+        "protobuf-net.core.nuspec",
+        "protobuf-net.png"
+      ]
+    },
+    "SemanticVersioning/1.2.2": {
+      "sha512": "SpzeSxG9Bl6tHswaEdwLtLLwtHGQEjhuxRjWPkp2MPJHy/Ku4BhCnpeZ2u32qk7E6TV4A6r19t214JXX1Gy0fQ==",
+      "type": "package",
+      "path": "semanticversioning/1.2.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net35/SemVer.dll",
+        "lib/net45/SemVer.dll",
+        "lib/netstandard1.1/SemVer.dll",
+        "lib/netstandard2.0/SemVer.dll",
+        "semanticversioning.1.2.2.nupkg.sha512",
+        "semanticversioning.nuspec"
+      ]
+    },
+    "SharpDX/4.0.1": {
+      "sha512": "8YA1VFg1/K8Emb8FEZDobojcv1BLuppVo7CRJQEgA1V748VIMPBru0i0OnsCjLSThzTn7juOvH85qjFL9Grl1w==",
+      "type": "package",
+      "path": "sharpdx/4.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/SharpDX.dll",
+        "lib/net40/SharpDX.xml",
+        "lib/net45/SharpDX.dll",
+        "lib/net45/SharpDX.xml",
+        "lib/netcoreapp1.0/SharpDX.dll",
+        "lib/netcoreapp1.0/SharpDX.xml",
+        "lib/netstandard1.1/SharpDX.dll",
+        "lib/netstandard1.1/SharpDX.xml",
+        "lib/uap10.0/SharpDX.dll",
+        "lib/uap10.0/SharpDX.pri",
+        "lib/uap10.0/SharpDX.xml",
+        "sharpdx.4.0.1.nupkg.sha512",
+        "sharpdx.nuspec"
+      ]
+    },
+    "SharpDX.Direct2D1/4.0.1": {
+      "sha512": "EDBYa9kAG+gaMB4cCH7WNpxS8WijSCejNz/SERs2P1sWEPZZdUiUIruQMjPCdW3lXxT508aYiH2UXHAaZtk00g==",
+      "type": "package",
+      "path": "sharpdx.direct2d1/4.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/SharpDX.Direct2D1.dll",
+        "lib/net40/SharpDX.Direct2D1.xml",
+        "lib/net45/SharpDX.Direct2D1.dll",
+        "lib/net45/SharpDX.Direct2D1.xml",
+        "lib/netcoreapp1.0/SharpDX.Direct2D1.dll",
+        "lib/netcoreapp1.0/SharpDX.Direct2D1.xml",
+        "lib/netstandard1.1/SharpDX.Direct2D1.dll",
+        "lib/netstandard1.1/SharpDX.Direct2D1.xml",
+        "lib/uap10.0/SharpDX.Direct2D1.dll",
+        "lib/uap10.0/SharpDX.Direct2D1.pri",
+        "lib/uap10.0/SharpDX.Direct2D1.xml",
+        "sharpdx.direct2d1.4.0.1.nupkg.sha512",
+        "sharpdx.direct2d1.nuspec"
+      ]
+    },
+    "SharpDX.Direct3D11/4.0.1": {
+      "sha512": "7xIfeAhxPhbPgSiREfFbOOwIWonUt2GHR7XZN5p2DJMWuqjl0+h1oo2/sF+SH/c6D6APjdbt0J+dYSzoV0PA/w==",
+      "type": "package",
+      "path": "sharpdx.direct3d11/4.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/SharpDX.Direct3D11.dll",
+        "lib/net40/SharpDX.Direct3D11.xml",
+        "lib/net45/SharpDX.Direct3D11.dll",
+        "lib/net45/SharpDX.Direct3D11.xml",
+        "lib/netcoreapp1.0/SharpDX.Direct3D11.dll",
+        "lib/netcoreapp1.0/SharpDX.Direct3D11.xml",
+        "lib/netstandard1.1/SharpDX.Direct3D11.dll",
+        "lib/netstandard1.1/SharpDX.Direct3D11.xml",
+        "lib/uap10.0/SharpDX.Direct3D11.dll",
+        "lib/uap10.0/SharpDX.Direct3D11.pri",
+        "lib/uap10.0/SharpDX.Direct3D11.xml",
+        "sharpdx.direct3d11.4.0.1.nupkg.sha512",
+        "sharpdx.direct3d11.nuspec"
+      ]
+    },
+    "SharpDX.Direct3D9/4.0.1": {
+      "sha512": "xUgVtuy3UGljCjzPe1d0yndNI+htHnpCUcMk1QpmXZHwxudUGtes1iz18JD2Zy5Xx7VzFp2+guOGWkNrJmIgEA==",
+      "type": "package",
+      "path": "sharpdx.direct3d9/4.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/SharpDX.Direct3D9.dll",
+        "lib/net40/SharpDX.Direct3D9.xml",
+        "lib/net45/SharpDX.Direct3D9.dll",
+        "lib/net45/SharpDX.Direct3D9.xml",
+        "lib/netcoreapp1.0/SharpDX.Direct3D9.dll",
+        "lib/netcoreapp1.0/SharpDX.Direct3D9.xml",
+        "lib/netstandard1.3/SharpDX.Direct3D9.dll",
+        "lib/netstandard1.3/SharpDX.Direct3D9.xml",
+        "sharpdx.direct3d9.4.0.1.nupkg.sha512",
+        "sharpdx.direct3d9.nuspec"
+      ]
+    },
+    "SharpDX.DXGI/4.0.1": {
+      "sha512": "Av/kToUkVR1tDtIP9zmDGwCuCtyL04+PP7kes6aABzky1Y9vT03kR7mDeE83gl+E8GUmMMbVXbQ4AG2CVb66sg==",
+      "type": "package",
+      "path": "sharpdx.dxgi/4.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/SharpDX.DXGI.dll",
+        "lib/net40/SharpDX.DXGI.xml",
+        "lib/net45/SharpDX.DXGI.dll",
+        "lib/net45/SharpDX.DXGI.xml",
+        "lib/netcoreapp1.0/SharpDX.DXGI.dll",
+        "lib/netcoreapp1.0/SharpDX.DXGI.xml",
+        "lib/netstandard1.1/SharpDX.DXGI.dll",
+        "lib/netstandard1.1/SharpDX.DXGI.xml",
+        "lib/uap10.0/SharpDX.DXGI.dll",
+        "lib/uap10.0/SharpDX.DXGI.pri",
+        "lib/uap10.0/SharpDX.DXGI.xml",
+        "sharpdx.dxgi.4.0.1.nupkg.sha512",
+        "sharpdx.dxgi.nuspec"
+      ]
+    },
+    "SharpDX.Mathematics/4.0.1": {
+      "sha512": "txMROd5A4mICHRRPf5KHA5MVNEqFUdOg2ZYfqNqjQM1n2jfe+sxDG3Xs+aO5zAShJAZFD6xO5R7yGfn9CzHckQ==",
+      "type": "package",
+      "path": "sharpdx.mathematics/4.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/SharpDX.Mathematics.dll",
+        "lib/net40/SharpDX.Mathematics.xml",
+        "lib/net45/SharpDX.Mathematics.dll",
+        "lib/net45/SharpDX.Mathematics.xml",
+        "lib/netcoreapp1.0/SharpDX.Mathematics.dll",
+        "lib/netcoreapp1.0/SharpDX.Mathematics.xml",
+        "lib/netstandard1.1/SharpDX.Mathematics.dll",
+        "lib/netstandard1.1/SharpDX.Mathematics.xml",
+        "lib/uap10.0/SharpDX.Mathematics.dll",
+        "lib/uap10.0/SharpDX.Mathematics.pri",
+        "lib/uap10.0/SharpDX.Mathematics.xml",
+        "sharpdx.mathematics.4.0.1.nupkg.sha512",
+        "sharpdx.mathematics.nuspec"
+      ]
+    },
+    "SharpDX.MediaFoundation/4.0.1": {
+      "sha512": "/po30bqI6n14db6eHirTLJYEVV8/Wi0DGn2OJGtEnf5/++jUOhMR5Z1Xi84wOldXgf+7WKXOML2BhpqCPWVC2g==",
+      "type": "package",
+      "path": "sharpdx.mediafoundation/4.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/SharpDX.MediaFoundation.dll",
+        "lib/net40/SharpDX.MediaFoundation.xml",
+        "lib/net45/SharpDX.MediaFoundation.dll",
+        "lib/net45/SharpDX.MediaFoundation.xml",
+        "lib/netcoreapp1.0/SharpDX.MediaFoundation.dll",
+        "lib/netcoreapp1.0/SharpDX.MediaFoundation.xml",
+        "lib/netstandard1.1/SharpDX.MediaFoundation.dll",
+        "lib/netstandard1.1/SharpDX.MediaFoundation.xml",
+        "lib/uap10.0/SharpDX.MediaFoundation.dll",
+        "lib/uap10.0/SharpDX.MediaFoundation.pri",
+        "lib/uap10.0/SharpDX.MediaFoundation.xml",
+        "sharpdx.mediafoundation.4.0.1.nupkg.sha512",
+        "sharpdx.mediafoundation.nuspec"
+      ]
+    },
+    "SharpDX.XAudio2/4.0.1": {
+      "sha512": "Kok1XdV2vEKSdr+EcGf0xFNBAd1tcjp/TZeRNBNVgB5YYoUGASoNO2decCBi7vh9qdocN+pmuuOiZCtDOd9DgQ==",
+      "type": "package",
+      "path": "sharpdx.xaudio2/4.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/SharpDX.XAudio2.dll",
+        "lib/net40/SharpDX.XAudio2.xml",
+        "lib/net45/SharpDX.XAudio2.dll",
+        "lib/net45/SharpDX.XAudio2.xml",
+        "lib/netcoreapp1.0/SharpDX.XAudio2.dll",
+        "lib/netcoreapp1.0/SharpDX.XAudio2.xml",
+        "lib/netstandard1.1/SharpDX.XAudio2.dll",
+        "lib/netstandard1.1/SharpDX.XAudio2.xml",
+        "lib/uap10.0/SharpDX.XAudio2.dll",
+        "lib/uap10.0/SharpDX.XAudio2.pri",
+        "lib/uap10.0/SharpDX.XAudio2.xml",
+        "sharpdx.xaudio2.4.0.1.nupkg.sha512",
+        "sharpdx.xaudio2.nuspec"
+      ]
+    },
+    "SharpDX.XInput/4.0.1": {
+      "sha512": "vDnp6CTVC9dKQHwLVF4GLNdCJqGMUuxyZLLlorDjgnVOOO7koPR20/tqt1A53gnNy/Id93Nzq7K2ILLvBQWvGQ==",
+      "type": "package",
+      "path": "sharpdx.xinput/4.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/SharpDX.XInput.dll",
+        "lib/net40/SharpDX.XInput.xml",
+        "lib/net45/SharpDX.XInput.dll",
+        "lib/net45/SharpDX.XInput.xml",
+        "lib/netcoreapp1.0/SharpDX.XInput.dll",
+        "lib/netcoreapp1.0/SharpDX.XInput.xml",
+        "lib/netstandard1.1/SharpDX.XInput.dll",
+        "lib/netstandard1.1/SharpDX.XInput.xml",
+        "lib/uap10.0/SharpDX.XInput.dll",
+        "lib/uap10.0/SharpDX.XInput.pri",
+        "lib/uap10.0/SharpDX.XInput.xml",
+        "sharpdx.xinput.4.0.1.nupkg.sha512",
+        "sharpdx.xinput.nuspec"
+      ]
+    },
+    "System.Buffers/4.5.1": {
+      "sha512": "Rw7ijyl1qqRS0YQD/WycNst8hUUMgrMH4FCn1nNm27M4VxchZ1js3fVjQaANHO5f3sN4isvP4a+Met9Y4YomAg==",
+      "type": "package",
+      "path": "system.buffers/4.5.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Buffers.dll",
+        "lib/net461/System.Buffers.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.1/System.Buffers.dll",
+        "lib/netstandard1.1/System.Buffers.xml",
+        "lib/netstandard2.0/System.Buffers.dll",
+        "lib/netstandard2.0/System.Buffers.xml",
+        "lib/uap10.0.16299/_._",
+        "ref/net45/System.Buffers.dll",
+        "ref/net45/System.Buffers.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.1/System.Buffers.dll",
+        "ref/netstandard1.1/System.Buffers.xml",
+        "ref/netstandard2.0/System.Buffers.dll",
+        "ref/netstandard2.0/System.Buffers.xml",
+        "ref/uap10.0.16299/_._",
+        "system.buffers.4.5.1.nupkg.sha512",
+        "system.buffers.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Collections.Immutable/1.7.1": {
+      "sha512": "B43Zsz5EfMwyEbnObwRxW5u85fzJma3lrDeGcSAV1qkhSRTNY5uXAByTn9h9ddNdhM+4/YoLc/CI43umjwIl9Q==",
+      "type": "package",
+      "path": "system.collections.immutable/1.7.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Collections.Immutable.dll",
+        "lib/net461/System.Collections.Immutable.xml",
+        "lib/netstandard1.0/System.Collections.Immutable.dll",
+        "lib/netstandard1.0/System.Collections.Immutable.xml",
+        "lib/netstandard1.3/System.Collections.Immutable.dll",
+        "lib/netstandard1.3/System.Collections.Immutable.xml",
+        "lib/netstandard2.0/System.Collections.Immutable.dll",
+        "lib/netstandard2.0/System.Collections.Immutable.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.dll",
+        "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.xml",
+        "system.collections.immutable.1.7.1.nupkg.sha512",
+        "system.collections.immutable.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.IdentityModel.Tokens.Jwt/6.14.1": {
+      "sha512": "aZGtxO8rx1h3KSzHYWXoPg47YGo5kON0Ot+L72A4bv44LMZZNqXfXyhSNLhVhaD24mlwYIXoyIaed4sXmrpA7Q==",
+      "type": "package",
+      "path": "system.identitymodel.tokens.jwt/6.14.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/System.IdentityModel.Tokens.Jwt.dll",
+        "lib/net45/System.IdentityModel.Tokens.Jwt.xml",
+        "lib/net461/System.IdentityModel.Tokens.Jwt.dll",
+        "lib/net461/System.IdentityModel.Tokens.Jwt.xml",
+        "lib/net472/System.IdentityModel.Tokens.Jwt.dll",
+        "lib/net472/System.IdentityModel.Tokens.Jwt.xml",
+        "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.dll",
+        "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.xml",
+        "system.identitymodel.tokens.jwt.6.14.1.nupkg.sha512",
+        "system.identitymodel.tokens.jwt.nuspec"
+      ]
+    },
+    "System.Memory/4.5.4": {
+      "sha512": "1MbJTHS1lZ4bS4FmsJjnuGJOu88ZzTT2rLvrhW7Ygic+pC0NWA+3hgAen0HRdsocuQXCkUTdFn9yHJJhsijDXw==",
+      "type": "package",
+      "path": "system.memory/4.5.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Memory.dll",
+        "lib/net461/System.Memory.xml",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.1/System.Memory.dll",
+        "lib/netstandard1.1/System.Memory.xml",
+        "lib/netstandard2.0/System.Memory.dll",
+        "lib/netstandard2.0/System.Memory.xml",
+        "ref/netcoreapp2.1/_._",
+        "system.memory.4.5.4.nupkg.sha512",
+        "system.memory.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Numerics.Vectors/4.5.0": {
+      "sha512": "QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
+      "type": "package",
+      "path": "system.numerics.vectors/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Numerics.Vectors.dll",
+        "lib/net46/System.Numerics.Vectors.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.0/System.Numerics.Vectors.dll",
+        "lib/netstandard1.0/System.Numerics.Vectors.xml",
+        "lib/netstandard2.0/System.Numerics.Vectors.dll",
+        "lib/netstandard2.0/System.Numerics.Vectors.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.dll",
+        "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.xml",
+        "lib/uap10.0.16299/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/System.Numerics.Vectors.dll",
+        "ref/net45/System.Numerics.Vectors.xml",
+        "ref/net46/System.Numerics.Vectors.dll",
+        "ref/net46/System.Numerics.Vectors.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.0/System.Numerics.Vectors.dll",
+        "ref/netstandard1.0/System.Numerics.Vectors.xml",
+        "ref/netstandard2.0/System.Numerics.Vectors.dll",
+        "ref/netstandard2.0/System.Numerics.Vectors.xml",
+        "ref/uap10.0.16299/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.numerics.vectors.4.5.0.nupkg.sha512",
+        "system.numerics.vectors.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Resources.Extensions/6.0.0": {
+      "sha512": "pBnVzNQYd0OHqh0VLu/hi0zFOTtyF8QwtziQBmzX/ZtVOea4+JEVOGu29DHeSOA0a9SFrYjQorBrOLuKLhcMNQ==",
+      "type": "package",
+      "path": "system.resources.extensions/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Resources.Extensions.targets",
+        "buildTransitive/netcoreapp2.0/System.Resources.Extensions.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/net461/System.Resources.Extensions.dll",
+        "lib/net461/System.Resources.Extensions.xml",
+        "lib/net6.0/System.Resources.Extensions.dll",
+        "lib/net6.0/System.Resources.Extensions.xml",
+        "lib/netstandard2.0/System.Resources.Extensions.dll",
+        "lib/netstandard2.0/System.Resources.Extensions.xml",
+        "system.resources.extensions.6.0.0.nupkg.sha512",
+        "system.resources.extensions.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.Runtime.CompilerServices.Unsafe/5.0.0": {
+      "sha512": "ZD9TMpsmYJLrxbbmdvhwt9YEgG5WntEnZ/d1eH8JBX9LBp+Ju8BSBhUGbZMNVHHomWo2KVImJhTDl2hIgw/6MA==",
+      "type": "package",
+      "path": "system.runtime.compilerservices.unsafe/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net45/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/net45/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/net461/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/net461/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard2.1/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard2.1/System.Runtime.CompilerServices.Unsafe.xml",
+        "system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
+        "system.runtime.compilerservices.unsafe.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Text.Encodings.Web/5.0.0": {
+      "sha512": "EEslUvHKll1ftizbn20mX3Ix/l4Ygk/bdJ2LY6/X6FlGaP0RIhKMo9nS6JIGnKKT6KBP2PGj6JC3B9/ZF6ErqQ==",
+      "type": "package",
+      "path": "system.text.encodings.web/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Text.Encodings.Web.dll",
+        "lib/net461/System.Text.Encodings.Web.xml",
+        "lib/netcoreapp3.0/System.Text.Encodings.Web.dll",
+        "lib/netcoreapp3.0/System.Text.Encodings.Web.xml",
+        "lib/netstandard1.0/System.Text.Encodings.Web.dll",
+        "lib/netstandard1.0/System.Text.Encodings.Web.xml",
+        "lib/netstandard2.0/System.Text.Encodings.Web.dll",
+        "lib/netstandard2.0/System.Text.Encodings.Web.xml",
+        "lib/netstandard2.1/System.Text.Encodings.Web.dll",
+        "lib/netstandard2.1/System.Text.Encodings.Web.xml",
+        "system.text.encodings.web.5.0.0.nupkg.sha512",
+        "system.text.encodings.web.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Text.Json/5.0.0": {
+      "sha512": "+luxMQNZ2WqeffBU7Ml6njIvxc8169NW2oU+ygNudXQGZiarjE7DOtN7bILiQjTZjkmwwRZGTtLzmdrSI/Ustw==",
+      "type": "package",
+      "path": "system.text.json/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Text.Json.dll",
+        "lib/net461/System.Text.Json.xml",
+        "lib/netcoreapp3.0/System.Text.Json.dll",
+        "lib/netcoreapp3.0/System.Text.Json.xml",
+        "lib/netstandard2.0/System.Text.Json.dll",
+        "lib/netstandard2.0/System.Text.Json.xml",
+        "system.text.json.5.0.0.nupkg.sha512",
+        "system.text.json.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Threading.Tasks.Extensions/4.5.4": {
+      "sha512": "zteT+G8xuGu6mS+mzDzYXbzS7rd3K6Fjb9RiZlYlJPam2/hU7JCBZBVEcywNuR+oZ1ncTvc/cq0faRr3P01OVg==",
+      "type": "package",
+      "path": "system.threading.tasks.extensions/4.5.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net461/System.Threading.Tasks.Extensions.dll",
+        "lib/net461/System.Threading.Tasks.Extensions.xml",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.0/System.Threading.Tasks.Extensions.dll",
+        "lib/netstandard1.0/System.Threading.Tasks.Extensions.xml",
+        "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll",
+        "lib/netstandard2.0/System.Threading.Tasks.Extensions.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.dll",
+        "lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.xml",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/netcoreapp2.1/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.threading.tasks.extensions.4.5.4.nupkg.sha512",
+        "system.threading.tasks.extensions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.ValueTuple/4.5.0": {
+      "sha512": "okurQJO6NRE/apDIP23ajJ0hpiNmJ+f0BwOlB/cSqTLQlw5upkf+5+96+iG2Jw40G1fCVCyPz/FhIABUjMR+RQ==",
+      "type": "package",
+      "path": "system.valuetuple/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net461/System.ValueTuple.dll",
+        "lib/net461/System.ValueTuple.xml",
+        "lib/net47/System.ValueTuple.dll",
+        "lib/net47/System.ValueTuple.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.0/System.ValueTuple.dll",
+        "lib/netstandard1.0/System.ValueTuple.xml",
+        "lib/netstandard2.0/_._",
+        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
+        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.xml",
+        "lib/uap10.0.16299/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net461/System.ValueTuple.dll",
+        "ref/net47/System.ValueTuple.dll",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard2.0/_._",
+        "ref/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
+        "ref/uap10.0.16299/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.valuetuple.4.5.0.nupkg.sha512",
+        "system.valuetuple.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.7.2": [
+      "AsyncClipboardService >= 1.7.1",
+      "BlishHUD >= 0.11.6",
+      "Gw2Sharp >= 1.7.0",
+      "Humanizer.Core.de >= 2.6.2",
+      "Humanizer.Core.es >= 2.6.2",
+      "Humanizer.Core.fr >= 2.6.2",
+      "MonoGame.Extended >= 3.8.0",
+      "MonoGame.Framework.WindowsDX >= 3.8.0.1641",
+      "SemanticVersioning >= 1.2.2"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\domin\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Workspaces\\Visual Studio\\Estreya Blish HUD Trading Post Watcher\\Estreya.BlishHUD.TradingPostWatcher\\Estreya.BlishHUD.TradingPostWatcher.csproj",
+      "projectName": "Estreya.BlishHUD.TradingPostWatcher",
+      "projectPath": "C:\\Workspaces\\Visual Studio\\Estreya Blish HUD Trading Post Watcher\\Estreya.BlishHUD.TradingPostWatcher\\Estreya.BlishHUD.TradingPostWatcher.csproj",
+      "packagesPath": "C:\\Users\\domin\\.nuget\\packages\\",
+      "outputPath": "C:\\Workspaces\\Visual Studio\\Estreya Blish HUD Trading Post Watcher\\Estreya.BlishHUD.TradingPostWatcher\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\domin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net472"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net472": {
+          "targetAlias": "net472",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net472": {
+        "targetAlias": "net472",
+        "dependencies": {
+          "AsyncClipboardService": {
+            "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "target": "Package",
+            "version": "[1.7.1, )"
+          },
+          "BlishHUD": {
+            "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "target": "Package",
+            "version": "[0.11.6, )"
+          },
+          "Gw2Sharp": {
+            "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "target": "Package",
+            "version": "[1.7.0, )"
+          },
+          "Humanizer.Core.de": {
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[2.6.2, )"
+          },
+          "Humanizer.Core.es": {
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[2.6.2, )"
+          },
+          "Humanizer.Core.fr": {
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[2.6.2, )"
+          },
+          "MonoGame.Extended": {
+            "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "target": "Package",
+            "version": "[3.8.0, )"
+          },
+          "MonoGame.Framework.WindowsDX": {
+            "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "target": "Package",
+            "version": "[3.8.0.1641, )"
+          },
+          "SemanticVersioning": {
+            "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "target": "Package",
+            "version": "[1.2.2, )"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
