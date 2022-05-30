@@ -1,33 +1,31 @@
 {
-  "name": "Event Table",
-  "version": "1.8.0-alpha.6",
-  "namespace": "estreya.bh.eventTable",
-  "package": "Estreya.BlishHUD.EventTable.dll",
+  "name": "Trading Post Watcher",
+  "version": "0.1.0-alpha.1",
+  "namespace": "estreya.bh.tradingPostWatcher",
+  "package": "Estreya.BlishHUD.TradingPostWatcher.dll",
   "manifest_version": 1,
-  "description": "Creates an event table which displays all timer based events.\nProvides high customizing abilities.\n\nLayout is inspired by TacO.",
+  "description": "",
   "dependencies": {
     "bh.blishhud": ">=0.11.7"
   },
-  "url": "https://github.com/Tharylia/Blish-HUD-Event-Table",
+  "url": "https://github.com/Tharylia/Blish-HUD-Trading-Post-Watcher",
   "contributors": [
     {
       "name": "Estreya",
       "username": "Dominik.8620"
     }
   ],
-  "directories": [
-    "events"
-  ],
+  "directories": ["tradingPost"],
   "actions": [],
   "enabled_without_gw2": false,
   "api_permissions": {
     "account": {
-      "optional": true,
-      "details": "Needed to check for completed events."
+      "optional": false,
+      "details": "Needed to fetch tradingpost."
     },
-    "progression": {
-      "optional": true,
-      "details": "Needed to check for completed events."
+    "tradingpost": {
+      "optional": false,
+      "details": "Needed to fetch tradingpost."
     }
   }
 }
