@@ -5,13 +5,13 @@
     },
     "Blish HUD": {
       "commandName": "Executable",
-      "executablePath": "C:\\Users\\domin\\Downloads\\Blish_HUD_0.10.0-ci.163\\Blish HUD.exe",
-      "commandLineArgs": "--debug --module \"C:\\Workspaces\\Visual Studio\\Estreya Blish HUD Trading Post Watcher\\Estreya.BlishHUD.TradingPostWatcher\\bin\\Debug\\net472\\Estreya.BlishHUD.TradingPostWatcher.bhm\" --settings \"C:\\Workspaces\\Visual Studio\\Estreya Blish HUD Trading Post Watcher\\Estreya.BlishHUD.TradingPostWatcher\\bin\\settings\""
+      "executablePath": "C:/Users/domin/Downloads/Blish_HUD_0.10.0-ci.163/Blish HUD.exe",
+      "commandLineArgs": "--debug --module \"C:/Workspaces/Visual Studio/Estreya Blish HUD Trading Post Watcher/Estreya.BlishHUD.TradingPostWatcher/bin/Debug/net48/Estreya.BlishHUD.TradingPostWatcher.bhm\" --settings \"C:/Users/domin/Documents/Guild Wars 2/addons/blishhud debug\""
     },
     "Blish HUD PS": {
       "commandName": "Executable",
-      "executablePath": "C:\\Users\\domin\\Downloads\\Blish_HUD_0.10.0-ci.163\\Blish HUD.exe",
-      "commandLineArgs": "--debug --module \"C:\\Workspaces\\Visual Studio\\Estreya Blish HUD Trading Post Watcher\\Estreya.BlishHUD.TradingPostWatcher\\bin\\Debug\\net472\\Estreya.BlishHUD.TradingPostWatcher.bhm\" --settings \"C:\\Workspaces\\Visual Studio\\Estreya Blish HUD Trading Post Watcher\\Estreya.BlishHUD.TradingPostWatcher\\bin\\settings\" --process powershell --window ConsoleWindowClass"
+      "executablePath": "C:/Users/domin/Downloads/Blish_HUD_0.10.0-ci.163/Blish HUD.exe",
+      "commandLineArgs": "--debug --module \"C:/Workspaces/Visual Studio/Estreya Blish HUD Trading Post Watcher/Estreya.BlishHUD.TradingPostWatcher/bin/Debug/net48/Estreya.BlishHUD.TradingPostWatcher.bhm\" --settings \"C:/Users/domin/Documents/Guild Wars 2/addons/blishhud debug\" --process powershell --window ConsoleWindowClass"
     }
   }
 }

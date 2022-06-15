@@ -4,8 +4,8 @@ using Blish_HUD;
 using Blish_HUD._Extensions;
 using Blish_HUD.Controls;
 using Estreya.BlishHUD.Shared.Controls;
+using Estreya.BlishHUD.Shared.Models;
 using Estreya.BlishHUD.Shared.Utils;
-using Estreya.BlishHUD.TradingPostWatcher.Models;
 using Glide;
 using Humanizer;
 using Microsoft.Xna.Framework;
@@ -19,7 +19,7 @@ using System.Threading.Tasks;
 
 public class TradingPostWatcherDrawer : FlowPanel
 {
-        private bool _currentVisibilityDirection = false;
+    private bool _currentVisibilityDirection = false;
     private Tween _currentVisibilityAnimation { get; set; }
 
     public new bool Visible
@@ -81,11 +81,6 @@ public class TradingPostWatcherDrawer : FlowPanel
             this.Visible = false;
             this._currentVisibilityAnimation = null;
         });
-    }
-
-    public async Task LoadAsync()
-    {
-
     }
 
     public void UpdateBackgroundColor()

@@ -22,7 +22,7 @@
             }
         }
 
-        protected override Task<bool> DoLoad(IProgress<string> progress)
+        protected override Task<bool> InternalLoad(IProgress<string> progress)
         {
             return Task.FromResult(true);
         }

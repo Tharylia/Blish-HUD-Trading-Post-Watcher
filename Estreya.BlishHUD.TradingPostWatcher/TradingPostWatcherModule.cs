@@ -3,20 +3,26 @@
     using Blish_HUD;
     using Blish_HUD.Controls;
     using Blish_HUD.Graphics.UI;
+    using Blish_HUD.Gw2WebApi;
     using Blish_HUD.Modules;
     using Blish_HUD.Modules.Managers;
     using Blish_HUD.Settings;
+    using Estreya.BlishHUD.Shared.Extensions;
+    using Estreya.BlishHUD.Shared.Helpers;
+    using Estreya.BlishHUD.Shared.Models;
+    using Estreya.BlishHUD.Shared.Models.GW2API.Commerce;
     using Estreya.BlishHUD.Shared.State;
     using Estreya.BlishHUD.Shared.Utils;
     using Estreya.BlishHUD.TradingPostWatcher.Controls;
-    using Estreya.BlishHUD.TradingPostWatcher.Models;
     using Estreya.BlishHUD.TradingPostWatcher.Resources;
     using Estreya.BlishHUD.TradingPostWatcher.State;
     using Gw2Sharp.Models;
+    using Humanizer;
     using Microsoft.Xna.Framework;
     using Microsoft.Xna.Framework.Graphics;
     using MonoGame.Extended.BitmapFonts;
     using System;
+    using System.Collections.Generic;
     using System.Collections.ObjectModel;
     using System.ComponentModel.Composition;
     using System.Linq;
@@ -53,8 +59,6 @@
 
         internal TabbedWindow2 SettingsWindow { get; private set; }
 
-        internal bool Debug => this.ModuleSettings.DebugEnabled.Value;
-
         private BitmapFont _font;
 
         internal BitmapFont Font
@@ -78,6 +82,7 @@
 
         public IconState IconState { get; private set; }
         public TradingPostState TradingPostState { get; private set; }
+        public TrackedTransactionState TrackedTransactionState { get; private set; }
         #endregion
 
         [ImportingConstructor]
@@ -102,6 +107,8 @@
                 HeightSizingMode = SizingMode.AutoSize,
             };
 
+            this.Drawer.UpdateBackgroundColor();
+
             GameService.Overlay.UserLocaleChanged += (s, e) =>
             {
             };
@@ -109,13 +116,9 @@
 
         protected override async Task LoadAsync()
         {
-            Logger.Debug("Load module settings.");
-            await this.ModuleSettings.LoadAsync();
 
             Logger.Debug("Initialize states");
             await this.InitializeStates();
-
-            await this.Drawer.LoadAsync();
 
             this.ModuleSettings.ModuleSettingsChanged += (sender, eventArgs) =>
             {
@@ -147,7 +150,6 @@
                         break;
                 }
             };
-
         }
 
         private void TradingPostState_TransactionsUpdated(object sender, EventArgs e)
@@ -157,16 +159,19 @@
 
         private void AddTransactions()
         {
+            Logger.Debug("Clear current transactions from drawer.");
+            this.Drawer.Children.ToList().ForEach(transaction => transaction.Dispose());
             this.Drawer.ClearChildren();
 
-            var filteredTransactions = this.TradingPostState.Transactions.Where(transaction =>
+            Logger.Debug("Filter new transactions.");
+            IEnumerable<CurrentTransaction> filteredTransactions = this.TradingPostState.Transactions.Where(transaction =>
             {
-                if (!this.ModuleSettings.ShowBuyTransactions.Value && transaction.Type == CommerceTransaction.TransactionType.Buy)
+                if (!this.ModuleSettings.ShowBuyTransactions.Value && transaction.Type == TransactionType.Buy)
                 {
                     return false;
                 }
 
-                if (!this.ModuleSettings.ShowSellTransactions.Value && transaction.Type == CommerceTransaction.TransactionType.Sell)
+                if (!this.ModuleSettings.ShowSellTransactions.Value && transaction.Type == TransactionType.Sell)
                 {
                     return false;
                 }
@@ -179,13 +184,14 @@
                 return true;
             });
 
-            foreach (CommerceTransaction transaction in filteredTransactions.Take(this.ModuleSettings.MaxTransactions.Value))
+            foreach (CurrentTransaction transaction in filteredTransactions.Take(this.ModuleSettings.MaxTransactions.Value))
             {
-                new Transaction(transaction, 
-                    () => this.ModuleSettings.Opacity.Value, 
-                    () => this.ModuleSettings.ShowPrice.Value, 
-                    () => this.ModuleSettings.ShowPriceAsTotal.Value, 
-                    () => this.ModuleSettings.ShowRemaining.Value, 
+                Logger.Debug("Add new transaction: {0}", transaction);
+                new Controls.Transaction(transaction,
+                    () => this.ModuleSettings.Opacity.Value,
+                    () => this.ModuleSettings.ShowPrice.Value,
+                    () => this.ModuleSettings.ShowPriceAsTotal.Value,
+                    () => this.ModuleSettings.ShowRemaining.Value,
                     () => this.ModuleSettings.ShowCreated.Value)
                 {
                     Parent = this.Drawer,
@@ -197,7 +203,7 @@
 
         private async Task InitializeStates()
         {
-            string directory = this.DirectoriesManager.GetFullDirectoryPath("tradingPost");
+            string directory = this.DirectoriesManager.GetFullDirectoryPath("tradingpost");
 
             using (await this._stateLock.LockAsync())
             {
@@ -205,8 +211,13 @@
                 this.TradingPostState = new TradingPostState(this.Gw2ApiManager);
                 this.TradingPostState.TransactionsUpdated += this.TradingPostState_TransactionsUpdated;
 
+                this.TrackedTransactionState = new TrackedTransactionState(this.Gw2ApiManager, directory);
+                this.TrackedTransactionState.TransactionEnteredRange += this.TrackedTransactionState_TransactionEnteredRange;
+                this.TrackedTransactionState.TransactionLeftRange += this.TrackedTransactionState_TransactionLeftRange;
+
                 this.States.Add(this.IconState);
                 this.States.Add(this.TradingPostState);
+                this.States.Add(this.TrackedTransactionState);
 
                 // Only start states not already running
                 foreach (ManagedState state in this.States.Where(state => !state.Running))
@@ -237,6 +248,15 @@
             }
         }
 
+        private void TrackedTransactionState_TransactionLeftRange(object sender, Shared.Models.GW2API.Commerce.Transaction e)
+        {
+            Shared.Controls.ScreenNotification.ShowNotification($"{e.Item.Name} is not best price anymore");
+        }
+
+        private void TrackedTransactionState_TransactionEnteredRange(object sender, Shared.Models.GW2API.Commerce.Transaction e)
+        {
+            Shared.Controls.ScreenNotification.ShowNotification($"{e.Item.Name} reached best {e.Type.Humanize(LetterCasing.LowerCase)} price of {GW2Utils.FormatCoins(e.Price)}");
+        }
 
         private void HandleCornerIcon(bool show)
         {
@@ -333,11 +353,38 @@
                 Id = $"{nameof(TradingPostWatcherModule)}_6bd04be4-dc19-4914-a2c3-8160ce76818b"
             };
 
-            this.SettingsWindow.Tabs.Add(new Tab(this.IconState.GetIcon(@"156736"), () => new UI.Views.Settings.GeneralSettingsView() { APIManager = this.Gw2ApiManager, DefaultColor = this.ModuleSettings.DefaultGW2Color }, Strings.SettingsWindow_GeneralSettings_Title));
-            this.SettingsWindow.Tabs.Add(new Tab(this.IconState.GetIcon(@"images\tradingpost.png"), () => new UI.Views.Settings.TransactionSettingsView() { APIManager = this.Gw2ApiManager, DefaultColor = this.ModuleSettings.DefaultGW2Color }, "Transactions"));
-            this.SettingsWindow.Tabs.Add(new Tab(this.IconState.GetIcon(@"images\graphics_settings.png"), () => new UI.Views.Settings.GraphicsSettingsView() { APIManager = this.Gw2ApiManager, DefaultColor = this.ModuleSettings.DefaultGW2Color }, Strings.SettingsWindow_GraphicSettings_Title));
 #if DEBUG
-            this.SettingsWindow.Tabs.Add(new Tab(this.IconState.GetIcon(@"155052"), () => new UI.Views.Settings.DebugSettingsView() { APIManager = this.Gw2ApiManager, DefaultColor = this.ModuleSettings.DefaultGW2Color }, "Debug"));
+            this.SettingsWindow.Tabs.Add(new Tab(this.IconState.GetIcon(@"images\tradingpost.png"), () =>
+            {
+                var trackedTransactionView = new UI.Views.TrackedTransactionView(this.TrackedTransactionState.TrackedTransactions)
+                {
+                    APIManager = this.Gw2ApiManager,
+                    IconState = this.IconState,
+                    DefaultColor = this.ModuleSettings.DefaultGW2Color
+                };
+
+                trackedTransactionView.AddTracking += (s, e) =>
+                {
+                    AsyncHelper.RunSync(async () =>
+                    {
+                        var added = await this.TrackedTransactionState.Add(e.ItemId, e.WishPrice, e.Type);
+                    });
+                };
+                trackedTransactionView.RemoveTracking += (s, e) =>
+                {
+                    this.TrackedTransactionState.Remove(e.ItemId, e.Type);
+                };
+
+                return trackedTransactionView;
+            }, "Tracked Transactions"));
+#endif
+
+            this.SettingsWindow.Tabs.Add(new Tab(this.IconState.GetIcon(@"156736"), () => new UI.Views.Settings.GeneralSettingsView() { APIManager = this.Gw2ApiManager, IconState = this.IconState, DefaultColor = this.ModuleSettings.DefaultGW2Color }, Strings.SettingsWindow_GeneralSettings_Title));
+            this.SettingsWindow.Tabs.Add(new Tab(this.IconState.GetIcon(@"images\tradingpost.png"), () => new UI.Views.Settings.TransactionSettingsView() { APIManager = this.Gw2ApiManager, IconState = this.IconState, DefaultColor = this.ModuleSettings.DefaultGW2Color }, "Transactions"));
+            this.SettingsWindow.Tabs.Add(new Tab(this.IconState.GetIcon(@"images\graphics_settings.png"), () => new UI.Views.Settings.GraphicsSettingsView() { APIManager = this.Gw2ApiManager, IconState = this.IconState, DefaultColor = this.ModuleSettings.DefaultGW2Color }, Strings.SettingsWindow_GraphicSettings_Title));
+
+#if DEBUG
+            this.SettingsWindow.Tabs.Add(new Tab(this.IconState.GetIcon(@"155052"), () => new UI.Views.Settings.DebugSettingsView() { APIManager = this.Gw2ApiManager, IconState = this.IconState, DefaultColor = this.ModuleSettings.DefaultGW2Color }, "Debug"));
 #endif
 
             Logger.Debug("Finished building settings window.");
@@ -355,7 +402,7 @@
             this.CheckMumble();
             this.Drawer.UpdatePosition(this.ModuleSettings.LocationX.Value, this.ModuleSettings.LocationY.Value); // Handle windows resize
 
-            this.CheckContainerSizeAndPosition();
+            this.ModuleSettings.CheckDrawerSizeAndPosition(this.Drawer.Width, this.Drawer.Height);
 
             using (this._stateLock.Lock())
             {
@@ -364,63 +411,6 @@
                     state.Update(gameTime);
                 }
             }
-
-        }
-
-        private void CheckContainerSizeAndPosition()
-        {
-            bool buildFromBottom = this.ModuleSettings.BuildDirection.Value == BuildDirection.Bottom;
-            int maxResX = (int)(GameService.Graphics.Resolution.X / GameService.Graphics.UIScaleMultiplier);
-            int maxResY = (int)(GameService.Graphics.Resolution.Y / GameService.Graphics.UIScaleMultiplier);
-
-            int minLocationX = 0;
-            int maxLocationX = maxResX - this.Drawer.Width;
-            int minLocationY = buildFromBottom ? this.Drawer.Height : 0;
-            int maxLocationY = buildFromBottom ? maxResY : maxResY - this.Drawer.Height;
-            int minWidth = 0;
-            int maxWidth = maxResX - this.ModuleSettings.LocationX.Value;
-
-            this.ModuleSettings.LocationX.SetRange(minLocationX, maxLocationX);
-            this.ModuleSettings.LocationY.SetRange(minLocationY, maxLocationY);
-            this.ModuleSettings.Width.SetRange(minWidth, maxWidth);
-
-            /*
-            if (this.ModuleSettings.LocationX.Value < minLocationX)
-            {
-                Logger.Debug($"LocationX unter min, set to: {minLocationX}");
-                this.ModuleSettings.LocationX.Value = minLocationX;
-            }
-
-            if (this.ModuleSettings.LocationX.Value > maxLocationX)
-            {
-                Logger.Debug($"LocationX over max, set to: {maxLocationX}");
-                this.ModuleSettings.LocationX.Value = maxLocationX;
-            }
-
-            if (this.ModuleSettings.LocationY.Value < minLocationY)
-            {
-                Logger.Debug($"LocationY unter min, set to: {minLocationY}");
-                this.ModuleSettings.LocationY.Value = minLocationY;
-            }
-
-            if (this.ModuleSettings.LocationY.Value > maxLocationY)
-            {
-                Logger.Debug($"LocationY over max, set to: {maxLocationY}");
-                this.ModuleSettings.LocationY.Value = maxLocationY;
-            }
-
-            if (this.ModuleSettings.Width.Value < minWidth)
-            {
-                Logger.Debug($"Width under min, set to: {minWidth}");
-                this.ModuleSettings.Width.Value = minWidth;
-            }
-
-            if (this.ModuleSettings.Width.Value > maxWidth)
-            {
-                Logger.Debug($"Width over max, set to: {maxWidth}");
-                this.ModuleSettings.Width.Value = maxWidth;
-            }
-            */
         }
 
         private void CheckMumble()
@@ -473,7 +463,7 @@
             {
                 this._webclient = new WebClient();
 
-                this._webclient.Headers.Add("user-agent", $"Trading Post Watcher {this.Version}");
+                this._webclient.Headers.Add("user-agent", $"{this.Name} {this.Version}");
             }
 
             return this._webclient;
@@ -488,6 +478,16 @@
 
             base.Unload();
 
+            Logger.Debug("Unloaded base.");
+
+            Logger.Debug("Unload settings");
+
+            if (this.ModuleSettings != null)
+            {
+                this.ModuleSettings.Unload();
+            }
+
+            Logger.Debug("Unloaded settings.");
 
             Logger.Debug("Unload drawer.");
 
@@ -503,6 +503,7 @@
             if (this.SettingsWindow != null)
             {
                 this.SettingsWindow.Hide();
+                this.SettingsWindow.Dispose();
             }
 
             Logger.Debug("Unloaded settings window.");
@@ -515,6 +516,8 @@
 
             Logger.Debug("Unloading states...");
             this.TradingPostState.TransactionsUpdated -= this.TradingPostState_TransactionsUpdated;
+            this.TrackedTransactionState.TransactionEnteredRange -= this.TrackedTransactionState_TransactionEnteredRange;
+            this.TrackedTransactionState.TransactionLeftRange -= this.TrackedTransactionState_TransactionLeftRange;
 
             using (this._stateLock.Lock())
             {

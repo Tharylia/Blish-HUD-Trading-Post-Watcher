@@ -1,6 +1,6 @@
 {
   "name": "Trading Post Watcher",
-  "version": "0.1.0-alpha.1",
+  "version": "0.1.0-alpha.4",
   "namespace": "estreya.bh.tradingPostWatcher",
   "package": "Estreya.BlishHUD.TradingPostWatcher.dll",
   "manifest_version": 1,
@@ -15,7 +15,7 @@
       "username": "Dominik.8620"
     }
   ],
-  "directories": ["tradingPost"],
+  "directories": ["tradingpost"],
   "actions": [],
   "enabled_without_gw2": false,
   "api_permissions": {

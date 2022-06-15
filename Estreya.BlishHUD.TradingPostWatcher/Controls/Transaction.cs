@@ -3,8 +3,9 @@
 using Blish_HUD;
 using Blish_HUD.Controls;
 using Estreya.BlishHUD.Shared.Controls;
+using Estreya.BlishHUD.Shared.Models;
+using Estreya.BlishHUD.Shared.Models.GW2API.Commerce;
 using Estreya.BlishHUD.Shared.Utils;
-using Estreya.BlishHUD.TradingPostWatcher.Models;
 using Humanizer;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -15,14 +16,14 @@ using System.Collections.Generic;
 
 public class Transaction : RenderTargetControl
 {
-    private readonly CommerceTransaction _commerceTransaction;
+    private readonly CurrentTransaction _currentTransaction;
     private readonly Func<float> _getOpacityAction;
     private readonly Func<bool> _getShowPrice;
     private readonly Func<bool> _getShowPriceAsTotal;
     private readonly Func<bool> _getShowRemaining;
     private readonly Func<bool> _getShowCreatedDate;
 
-    private Texture2D _transactionTexture => TradingPostWatcherModule.ModuleInstance.IconState.GetIcon(this._commerceTransaction?.Item?.Icon);
+    private Texture2D _transactionTexture => TradingPostWatcherModule.ModuleInstance.IconState.GetIcon(this._currentTransaction?.Item?.Icon);
 
     private const int SPACING_X = 10;
 
@@ -50,9 +51,9 @@ public class Transaction : RenderTargetControl
         set => this.SetProperty(ref this._heightSizingMode, value);
     }
 
-    public Transaction(CommerceTransaction commerceTransaction, Func<float> getOpacity, Func<bool> getShowPrice, Func<bool> getShowPriceAsTotal, Func<bool> getShowRemaining, Func<bool> getShowCreatedDate)
+    public Transaction(CurrentTransaction commerceTransaction, Func<float> getOpacity, Func<bool> getShowPrice, Func<bool> getShowPriceAsTotal, Func<bool> getShowRemaining, Func<bool> getShowCreatedDate)
     {
-        this._commerceTransaction = commerceTransaction;
+        this._currentTransaction = commerceTransaction;
         this._getOpacityAction = getOpacity;
         this._getShowPrice = getShowPrice;
         this._getShowPriceAsTotal = getShowPriceAsTotal;
@@ -78,22 +79,22 @@ public class Transaction : RenderTargetControl
 
         RectangleF textRectangle = new RectangleF(iconBounds.Width + SPACING_X, 0, textMaxWidth, this.Height);
 
-        spriteBatch.DrawString(text, TradingPostWatcherModule.ModuleInstance.Font, textRectangle, (this._commerceTransaction.IsHighest ? Color.Green : Color.Red) * opacity);
+        spriteBatch.DrawString(text, TradingPostWatcherModule.ModuleInstance.Font, textRectangle, (this._currentTransaction.IsHighest ? Color.Green : Color.Red) * opacity);
     }
 
     private string GetText()
     {
-        string text = $"{this._commerceTransaction.Type.Humanize()}: {this._commerceTransaction.Item.Name}";
+        string text = $"{this._currentTransaction.Type.Humanize()}: {this._currentTransaction.Item.Name}";
 
         List<string> additionalInfos = new List<string>();
 
         if (this._getShowPrice?.Invoke() ?? false)
         {
-            int price = this._commerceTransaction.Price;
+            int price = this._currentTransaction.Price;
 
             if (this._getShowPriceAsTotal?.Invoke() ?? false)
             {
-                price *= this._commerceTransaction.Quantity;
+                price *= this._currentTransaction.Quantity;
             }
 
             additionalInfos.Add($"Price: {GW2Utils.FormatCoins(price)}");
@@ -101,12 +102,12 @@ public class Transaction : RenderTargetControl
 
         if (this._getShowRemaining?.Invoke() ?? false)
         {
-            additionalInfos.Add($"Remaining: {this._commerceTransaction.Quantity}");
+            additionalInfos.Add($"Remaining: {this._currentTransaction.Quantity}");
         }
 
         if (this._getShowCreatedDate?.Invoke() ?? false)
         {
-            additionalInfos.Add($"Created: {this._commerceTransaction.Created.ToLocalTime().ToString("dd.MM.yyyy HH:mm:ss")}");
+            additionalInfos.Add($"Created: {this._currentTransaction.Created.ToLocalTime().ToString("dd.MM.yyyy HH:mm:ss")}");
         }
 
         if (additionalInfos.Count > 0)
